@@ -1,0 +1,2207 @@
+[
+  {
+    "flag": "🇲🇷",
+    "coords": {
+      "lat": 18.07,
+      "long": -15.97
+    },
+    "location": "Mauritania",
+    "name": "Nouakchott"
+  },
+  {
+    "flag": "🇪🇷",
+    "coords": {
+      "lat": 15.33,
+      "long": 38.93
+    },
+    "location": "Eritrea",
+    "name": "Asmara"
+  },
+  {
+    "flag": "🇵🇷",
+    "coords": {
+      "lat": 18.47,
+      "long": -66.12
+    },
+    "location": "Puerto Rico",
+    "name": "San Juan"
+  },
+  {
+    "flag": "🇷🇴",
+    "coords": {
+      "lat": 44.43,
+      "long": 26.1
+    },
+    "location": "Romania",
+    "name": "Bucharest"
+  },
+  {
+    "flag": "🇦🇬",
+    "coords": {
+      "lat": 17.12,
+      "long": -61.85
+    },
+    "location": "Antigua and Barbuda",
+    "name": "Saint John's"
+  },
+  {
+    "flag": "🇨🇨",
+    "coords": {
+      "lat": -12.17,
+      "long": 96.83
+    },
+    "location": "Cocos (Keeling) Islands",
+    "name": "West Island"
+  },
+  {
+    "flag": "🇨🇴",
+    "coords": {
+      "lat": 4.71,
+      "long": -74.07
+    },
+    "location": "Colombia",
+    "name": "Bogotá"
+  },
+  {
+    "flag": "🇨🇱",
+    "coords": {
+      "lat": -33.45,
+      "long": -70.67
+    },
+    "location": "Chile",
+    "name": "Santiago"
+  },
+  {
+    "flag": "🇬🇭",
+    "coords": {
+      "lat": 5.55,
+      "long": -0.22
+    },
+    "location": "Ghana",
+    "name": "Accra"
+  },
+  {
+    "flag": "🇬🇮",
+    "coords": {
+      "lat": 36.13,
+      "long": -5.35
+    },
+    "location": "Gibraltar",
+    "name": "Gibraltar"
+  },
+  {
+    "flag": "🇻🇪",
+    "coords": {
+      "lat": 10.48,
+      "long": -66.87
+    },
+    "location": "Venezuela",
+    "name": "Caracas"
+  },
+  {
+    "flag": "🇽🇰",
+    "coords": {
+      "lat": 42.67,
+      "long": 21.17
+    },
+    "location": "Kosovo",
+    "name": "Pristina"
+  },
+  {
+    "flag": "🇧🇼",
+    "coords": {
+      "lat": -24.63,
+      "long": 25.9
+    },
+    "location": "Botswana",
+    "name": "Gaborone"
+  },
+  {
+    "flag": "🇹🇿",
+    "coords": {
+      "lat": -6.16,
+      "long": 35.75
+    },
+    "location": "Tanzania",
+    "name": "Dodoma"
+  },
+  {
+    "flag": "🇲🇪",
+    "coords": {
+      "lat": 42.43,
+      "long": 19.27
+    },
+    "location": "Montenegro",
+    "name": "Podgorica"
+  },
+  {
+    "flag": "🇰🇲",
+    "coords": {
+      "lat": -11.7,
+      "long": 43.23
+    },
+    "location": "Comoros",
+    "name": "Moroni"
+  },
+  {
+    "flag": "🇨🇮",
+    "coords": {
+      "lat": 6.82,
+      "long": -5.27
+    },
+    "location": "Ivory Coast",
+    "name": "Yamoussoukro"
+  },
+  {
+    "flag": "🇨🇻",
+    "coords": {
+      "lat": 14.92,
+      "long": -23.52
+    },
+    "location": "Cape Verde",
+    "name": "Praia"
+  },
+  {
+    "flag": "🇱🇸",
+    "coords": {
+      "lat": -29.32,
+      "long": 27.48
+    },
+    "location": "Lesotho",
+    "name": "Maseru"
+  },
+  {
+    "flag": "🇬🇦",
+    "coords": {
+      "lat": 0.38,
+      "long": 9.45
+    },
+    "location": "Gabon",
+    "name": "Libreville"
+  },
+  {
+    "flag": "🇬🇩",
+    "coords": {
+      "lat": 32.38,
+      "long": -64.68
+    },
+    "location": "Grenada",
+    "name": "St. George's"
+  },
+  {
+    "flag": "🇯🇴",
+    "coords": {
+      "lat": 31.95,
+      "long": 35.93
+    },
+    "location": "Jordan",
+    "name": "Amman"
+  },
+  {
+    "flag": "🇸🇪",
+    "coords": {
+      "lat": 59.33,
+      "long": 18.05
+    },
+    "location": "Sweden",
+    "name": "Stockholm"
+  },
+  {
+    "flag": "🇻🇳",
+    "coords": {
+      "lat": 21.03,
+      "long": 105.85
+    },
+    "location": "Vietnam",
+    "name": "Hanoi"
+  },
+  {
+    "flag": "🇶🇦",
+    "coords": {
+      "lat": 25.28,
+      "long": 51.53
+    },
+    "location": "Qatar",
+    "name": "Doha"
+  },
+  {
+    "flag": "🇧🇷",
+    "coords": {
+      "lat": -15.79,
+      "long": -47.88
+    },
+    "location": "Brazil",
+    "name": "Brasília"
+  },
+  {
+    "flag": "🇫🇮",
+    "coords": {
+      "lat": 60.17,
+      "long": 24.93
+    },
+    "location": "Finland",
+    "name": "Helsinki"
+  },
+  {
+    "flag": "🇬🇪",
+    "coords": {
+      "lat": 41.68,
+      "long": 44.83
+    },
+    "location": "Georgia",
+    "name": "Tbilisi"
+  },
+  {
+    "flag": "🇸🇳",
+    "coords": {
+      "lat": 14.73,
+      "long": -17.63
+    },
+    "location": "Senegal",
+    "name": "Dakar"
+  },
+  {
+    "flag": "🇰🇷",
+    "coords": {
+      "lat": 37.55,
+      "long": 126.98
+    },
+    "location": "South Korea",
+    "name": "Seoul"
+  },
+  {
+    "flag": "🇦🇮",
+    "coords": {
+      "lat": 18.22,
+      "long": -63.05
+    },
+    "location": "Anguilla",
+    "name": "The Valley"
+  },
+  {
+    "flag": "🇸🇹",
+    "coords": {
+      "lat": 0.34,
+      "long": 6.73
+    },
+    "location": "São Tomé and Príncipe",
+    "name": "São Tomé"
+  },
+  {
+    "flag": "🇬🇾",
+    "coords": {
+      "lat": 6.8,
+      "long": -58.15
+    },
+    "location": "Guyana",
+    "name": "Georgetown"
+  },
+  {
+    "flag": "🇳🇷",
+    "coords": {
+      "lat": -0.55,
+      "long": 166.92
+    },
+    "location": "Nauru",
+    "name": "Yaren"
+  },
+  {
+    "flag": "🇸🇷",
+    "coords": {
+      "lat": 5.83,
+      "long": -55.17
+    },
+    "location": "Suriname",
+    "name": "Paramaribo"
+  },
+  {
+    "flag": "🇰🇭",
+    "coords": {
+      "lat": 11.55,
+      "long": 104.92
+    },
+    "location": "Cambodia",
+    "name": "Phnom Penh"
+  },
+  {
+    "flag": "🇨🇼",
+    "coords": {
+      "lat": 12.1,
+      "long": -68.92
+    },
+    "location": "Curaçao",
+    "name": "Willemstad"
+  },
+  {
+    "flag": "🇲🇻",
+    "coords": {
+      "lat": 4.17,
+      "long": 73.51
+    },
+    "location": "Maldives",
+    "name": "Malé"
+  },
+  {
+    "flag": "🇵🇾",
+    "coords": {
+      "lat": -25.28,
+      "long": -57.57
+    },
+    "location": "Paraguay",
+    "name": "Asunción"
+  },
+  {
+    "flag": "🇵🇪",
+    "coords": {
+      "lat": -12.05,
+      "long": -77.05
+    },
+    "location": "Peru",
+    "name": "Lima"
+  },
+  {
+    "flag": "🇫🇷",
+    "coords": {
+      "lat": 48.87,
+      "long": 2.33
+    },
+    "location": "France",
+    "name": "Paris"
+  },
+  {
+    "flag": "🇫🇰",
+    "coords": {
+      "lat": -51.7,
+      "long": -57.85
+    },
+    "location": "Falkland Islands",
+    "name": "Stanley"
+  },
+  {
+    "flag": "🇺🇿",
+    "coords": {
+      "lat": 41.32,
+      "long": 69.25
+    },
+    "location": "Uzbekistan",
+    "name": "Tashkent"
+  },
+  {
+    "flag": "🇪🇬",
+    "coords": {
+      "lat": 30.05,
+      "long": 31.25
+    },
+    "location": "Egypt",
+    "name": "Cairo"
+  },
+  {
+    "flag": "🇩🇲",
+    "coords": {
+      "lat": 15.3,
+      "long": -61.4
+    },
+    "location": "Dominica",
+    "name": "Roseau"
+  },
+  {
+    "flag": "🇮🇱",
+    "coords": {
+      "lat": 31.77,
+      "long": 35.23
+    },
+    "location": "Israel",
+    "name": "Jerusalem"
+  },
+  {
+    "flag": "🇲🇨",
+    "coords": {
+      "lat": 43.73,
+      "long": 7.42
+    },
+    "location": "Monaco",
+    "name": "Monaco"
+  },
+  {
+    "flag": "🇨🇬",
+    "coords": {
+      "lat": -4.25,
+      "long": 15.28
+    },
+    "location": "Republic of the Congo",
+    "name": "Brazzaville"
+  },
+  {
+    "flag": "🇮🇪",
+    "coords": {
+      "lat": 53.32,
+      "long": -6.23
+    },
+    "location": "Ireland",
+    "name": "Dublin"
+  },
+  {
+    "flag": "🇹🇫",
+    "coords": {
+      "lat": 48.81,
+      "long": -1.4
+    },
+    "location": "French Southern and Antarctic Lands",
+    "name": "Port-aux-Français"
+  },
+  {
+    "flag": "🇰🇿",
+    "coords": {
+      "lat": 51.16,
+      "long": 71.45
+    },
+    "location": "Kazakhstan",
+    "name": "Nur-Sultan"
+  },
+  {
+    "flag": "🇲🇾",
+    "coords": {
+      "lat": 3.17,
+      "long": 101.7
+    },
+    "location": "Malaysia",
+    "name": "Kuala Lumpur"
+  },
+  {
+    "flag": "🇦🇪",
+    "coords": {
+      "lat": 24.47,
+      "long": 54.37
+    },
+    "location": "United Arab Emirates",
+    "name": "Abu Dhabi"
+  },
+  {
+    "flag": "🇨🇿",
+    "coords": {
+      "lat": 50.08,
+      "long": 14.47
+    },
+    "location": "Czechia",
+    "name": "Prague"
+  },
+  {
+    "flag": "🇾🇪",
+    "coords": {
+      "lat": 15.37,
+      "long": 44.19
+    },
+    "location": "Yemen",
+    "name": "Sana'a"
+  },
+  {
+    "flag": "🇲🇲",
+    "coords": {
+      "lat": 19.76,
+      "long": 96.07
+    },
+    "location": "Myanmar",
+    "name": "Naypyidaw"
+  },
+  {
+    "flag": "🇰🇳",
+    "coords": {
+      "lat": 17.3,
+      "long": -62.72
+    },
+    "location": "Saint Kitts and Nevis",
+    "name": "Basseterre"
+  },
+  {
+    "flag": "🇻🇮",
+    "coords": {
+      "lat": 18.35,
+      "long": -64.93
+    },
+    "location": "United States Virgin Islands",
+    "name": "Charlotte Amalie"
+  },
+  {
+    "flag": "🇵🇫",
+    "coords": {
+      "lat": -17.53,
+      "long": -149.56
+    },
+    "location": "French Polynesia",
+    "name": "Papeetē"
+  },
+  {
+    "flag": "🇫🇯",
+    "coords": {
+      "lat": -18.13,
+      "long": 178.42
+    },
+    "location": "Fiji",
+    "name": "Suva"
+  },
+  {
+    "flag": "🇦🇱",
+    "coords": {
+      "lat": 41.32,
+      "long": 19.82
+    },
+    "location": "Albania",
+    "name": "Tirana"
+  },
+  {
+    "flag": "🇮🇲",
+    "coords": {
+      "lat": 54.15,
+      "long": -4.48
+    },
+    "location": "Isle of Man",
+    "name": "Douglas"
+  },
+  {
+    "flag": "🇦🇺",
+    "coords": {
+      "lat": -35.27,
+      "long": 149.13
+    },
+    "location": "Australia",
+    "name": "Canberra"
+  },
+  {
+    "flag": "🇧🇶",
+    "coords": {
+      "lat": 12.14,
+      "long": -68.27
+    },
+    "location": "Caribbean Netherlands",
+    "name": "Kralendijk"
+  },
+  {
+    "flag": "🇮🇹",
+    "coords": {
+      "lat": 41.9,
+      "long": 12.48
+    },
+    "location": "Italy",
+    "name": "Rome"
+  },
+  {
+    "flag": "🇦🇫",
+    "coords": {
+      "lat": 34.52,
+      "long": 69.18
+    },
+    "location": "Afghanistan",
+    "name": "Kabul"
+  },
+  {
+    "flag": "🇰🇬",
+    "coords": {
+      "lat": 42.87,
+      "long": 74.6
+    },
+    "location": "Kyrgyzstan",
+    "name": "Bishkek"
+  },
+  {
+    "flag": "🇼🇫",
+    "coords": {
+      "lat": -13.95,
+      "long": -171.93
+    },
+    "location": "Wallis and Futuna",
+    "name": "Mata-Utu"
+  },
+  {
+    "flag": "🇺🇸",
+    "coords": {
+      "lat": 38.89,
+      "long": -77.05
+    },
+    "location": "United States",
+    "name": "Washington, D.C."
+  },
+  {
+    "flag": "🇲🇶",
+    "coords": {
+      "lat": 14.6,
+      "long": -61.08
+    },
+    "location": "Martinique",
+    "name": "Fort-de-France"
+  },
+  {
+    "flag": "🇵🇭",
+    "coords": {
+      "lat": 14.6,
+      "long": 120.97
+    },
+    "location": "Philippines",
+    "name": "Manila"
+  },
+  {
+    "flag": "🇷🇸",
+    "coords": {
+      "lat": 44.83,
+      "long": 20.5
+    },
+    "location": "Serbia",
+    "name": "Belgrade"
+  },
+  {
+    "flag": "🇸🇭",
+    "coords": {
+      "lat": -15.93,
+      "long": -5.72
+    },
+    "location": "Saint Helena, Ascension and Tristan da Cunha",
+    "name": "Jamestown"
+  },
+  {
+    "flag": "🇮🇴",
+    "coords": {
+      "lat": -7.3,
+      "long": 72.4
+    },
+    "location": "British Indian Ocean Territory",
+    "name": "Diego Garcia"
+  },
+  {
+    "flag": "🇲🇩",
+    "coords": {
+      "lat": 47.01,
+      "long": 28.9
+    },
+    "location": "Moldova",
+    "name": "Chișinău"
+  },
+  {
+    "flag": "🇭🇰",
+    "coords": {
+      "lat": 22.267,
+      "long": 114.188
+    },
+    "location": "Hong Kong",
+    "name": "City of Victoria"
+  },
+  {
+    "flag": "🇵🇰",
+    "coords": {
+      "lat": 33.68,
+      "long": 73.05
+    },
+    "location": "Pakistan",
+    "name": "Islamabad"
+  },
+  {
+    "flag": "🇸🇦",
+    "coords": {
+      "lat": 24.65,
+      "long": 46.7
+    },
+    "location": "Saudi Arabia",
+    "name": "Riyadh"
+  },
+  {
+    "flag": "🇦🇴",
+    "coords": {
+      "lat": -8.83,
+      "long": 13.22
+    },
+    "location": "Angola",
+    "name": "Luanda"
+  },
+  {
+    "flag": "🇳🇨",
+    "coords": {
+      "lat": -22.27,
+      "long": 166.45
+    },
+    "location": "New Caledonia",
+    "name": "Nouméa"
+  },
+  {
+    "flag": "🇱🇹",
+    "coords": {
+      "lat": 54.68,
+      "long": 25.32
+    },
+    "location": "Lithuania",
+    "name": "Vilnius"
+  },
+  {
+    "flag": "🇳🇱",
+    "coords": {
+      "lat": 52.35,
+      "long": 4.92
+    },
+    "location": "Netherlands",
+    "name": "Amsterdam"
+  },
+  {
+    "flag": "🇬🇱",
+    "coords": {
+      "lat": 64.18,
+      "long": -51.75
+    },
+    "location": "Greenland",
+    "name": "Nuuk"
+  },
+  {
+    "flag": "🇻🇦",
+    "coords": {
+      "lat": 41.9,
+      "long": 12.45
+    },
+    "location": "Vatican City",
+    "name": "Vatican City"
+  },
+  {
+    "flag": "🇫🇲",
+    "coords": {
+      "lat": 6.92,
+      "long": 158.15
+    },
+    "location": "Micronesia",
+    "name": "Palikir"
+  },
+  {
+    "flag": "🇰🇼",
+    "coords": {
+      "lat": 29.37,
+      "long": 47.97
+    },
+    "location": "Kuwait",
+    "name": "Kuwait City"
+  },
+  {
+    "flag": "🇨🇭",
+    "coords": {
+      "lat": 46.92,
+      "long": 7.47
+    },
+    "location": "Switzerland",
+    "name": "Bern"
+  },
+  {
+    "flag": "🇱🇨",
+    "coords": {
+      "lat": 14,
+      "long": -61
+    },
+    "location": "Saint Lucia",
+    "name": "Castries"
+  },
+  {
+    "flag": "🇹🇨",
+    "coords": {
+      "lat": 21.46,
+      "long": -71.14
+    },
+    "location": "Turks and Caicos Islands",
+    "name": "Cockburn Town"
+  },
+  {
+    "flag": "🇲🇹",
+    "coords": {
+      "lat": 35.88,
+      "long": 14.5
+    },
+    "location": "Malta",
+    "name": "Valletta"
+  },
+  {
+    "flag": "🇹🇴",
+    "coords": {
+      "lat": -21.13,
+      "long": -175.2
+    },
+    "location": "Tonga",
+    "name": "Nuku'alofa"
+  },
+  {
+    "flag": "🇬🇹",
+    "coords": {
+      "lat": 14.62,
+      "long": -90.52
+    },
+    "location": "Guatemala",
+    "name": "Guatemala City"
+  },
+  {
+    "flag": "🇺🇬",
+    "coords": {
+      "lat": 0.32,
+      "long": 32.55
+    },
+    "location": "Uganda",
+    "name": "Kampala"
+  },
+  {
+    "flag": "🇬🇳",
+    "coords": {
+      "lat": 9.5,
+      "long": -13.7
+    },
+    "location": "Guinea",
+    "name": "Conakry"
+  },
+  {
+    "flag": "🇦🇸",
+    "coords": {
+      "lat": -14.27,
+      "long": -170.7
+    },
+    "location": "American Samoa",
+    "name": "Pago Pago"
+  },
+  {
+    "flag": "🇸🇽",
+    "coords": {
+      "lat": 18.02,
+      "long": -63.03
+    },
+    "location": "Sint Maarten",
+    "name": "Philipsburg"
+  },
+  {
+    "flag": "🇳🇵",
+    "coords": {
+      "lat": 27.72,
+      "long": 85.32
+    },
+    "location": "Nepal",
+    "name": "Kathmandu"
+  },
+  {
+    "flag": "🇸🇮",
+    "coords": {
+      "lat": 46.05,
+      "long": 14.52
+    },
+    "location": "Slovenia",
+    "name": "Ljubljana"
+  },
+  {
+    "flag": "🇻🇬",
+    "coords": {
+      "lat": 18.42,
+      "long": -64.62
+    },
+    "location": "British Virgin Islands",
+    "name": "Road Town"
+  },
+  {
+    "flag": "🇪🇹",
+    "coords": {
+      "lat": 9.03,
+      "long": 38.7
+    },
+    "location": "Ethiopia",
+    "name": "Addis Ababa"
+  },
+  {
+    "flag": "🇰🇮",
+    "coords": {
+      "lat": 1.33,
+      "long": 172.98
+    },
+    "location": "Kiribati",
+    "name": "South Tarawa"
+  },
+  {
+    "flag": "🇬🇺",
+    "coords": {
+      "lat": 13.48,
+      "long": 144.75
+    },
+    "location": "Guam",
+    "name": "Hagåtña"
+  },
+  {
+    "flag": "🇹🇬",
+    "coords": {
+      "lat": 6.14,
+      "long": 1.21
+    },
+    "location": "Togo",
+    "name": "Lomé"
+  },
+  {
+    "flag": "🇵🇬",
+    "coords": {
+      "lat": -9.45,
+      "long": 147.18
+    },
+    "location": "Papua New Guinea",
+    "name": "Port Moresby"
+  },
+  {
+    "flag": "🇮🇸",
+    "coords": {
+      "lat": 64.15,
+      "long": -21.95
+    },
+    "location": "Iceland",
+    "name": "Reykjavik"
+  },
+  {
+    "flag": "🇲🇵",
+    "coords": {
+      "lat": 15.2,
+      "long": 145.75
+    },
+    "location": "Northern Mariana Islands",
+    "name": "Saipan"
+  },
+  {
+    "flag": "🇦🇹",
+    "coords": {
+      "lat": 48.2,
+      "long": 16.37
+    },
+    "location": "Austria",
+    "name": "Vienna"
+  },
+  {
+    "flag": "🇲🇦",
+    "coords": {
+      "lat": 34.02,
+      "long": -6.82
+    },
+    "location": "Morocco",
+    "name": "Rabat"
+  },
+  {
+    "flag": "🇬🇸",
+    "coords": {
+      "lat": -54.28,
+      "long": -36.5
+    },
+    "location": "South Georgia",
+    "name": "King Edward Point"
+  },
+  {
+    "flag": "🇮🇶",
+    "coords": {
+      "lat": 33.33,
+      "long": 44.4
+    },
+    "location": "Iraq",
+    "name": "Baghdad"
+  },
+  {
+    "flag": "🇱🇮",
+    "coords": {
+      "lat": 47.13,
+      "long": 9.52
+    },
+    "location": "Liechtenstein",
+    "name": "Vaduz"
+  },
+  {
+    "flag": "🇩🇴",
+    "coords": {
+      "lat": 18.47,
+      "long": -69.9
+    },
+    "location": "Dominican Republic",
+    "name": "Santo Domingo"
+  },
+  {
+    "flag": "🇪🇨",
+    "coords": {
+      "lat": -0.22,
+      "long": -78.5
+    },
+    "location": "Ecuador",
+    "name": "Quito"
+  },
+  {
+    "flag": "🇸🇱",
+    "coords": {
+      "lat": 8.48,
+      "long": -13.23
+    },
+    "location": "Sierra Leone",
+    "name": "Freetown"
+  },
+  {
+    "flag": "🇧🇿",
+    "coords": {
+      "lat": 17.25,
+      "long": -88.77
+    },
+    "location": "Belize",
+    "name": "Belmopan"
+  },
+  {
+    "flag": "🇧🇹",
+    "coords": {
+      "lat": 27.47,
+      "long": 89.63
+    },
+    "location": "Bhutan",
+    "name": "Thimphu"
+  },
+  {
+    "flag": "🇮🇷",
+    "coords": {
+      "lat": 35.7,
+      "long": 51.42
+    },
+    "location": "Iran",
+    "name": "Tehran"
+  },
+  {
+    "flag": "🇧🇴",
+    "coords": {
+      "lat": -19.02,
+      "long": -65.26
+    },
+    "location": "Bolivia",
+    "name": "Sucre"
+  },
+  {
+    "flag": "🇹🇷",
+    "coords": {
+      "lat": 39.93,
+      "long": 32.87
+    },
+    "location": "Turkey",
+    "name": "Ankara"
+  },
+  {
+    "flag": "🇫🇴",
+    "coords": {
+      "lat": 62.01,
+      "long": -6.77
+    },
+    "location": "Faroe Islands",
+    "name": "Tórshavn"
+  },
+  {
+    "flag": "🇧🇱",
+    "coords": {
+      "lat": 17.88,
+      "long": -62.85
+    },
+    "location": "Saint Barthélemy",
+    "name": "Gustavia"
+  },
+  {
+    "flag": "🇬🇷",
+    "coords": {
+      "lat": 37.98,
+      "long": 23.73
+    },
+    "location": "Greece",
+    "name": "Athens"
+  },
+  {
+    "flag": "🇮🇳",
+    "coords": {
+      "lat": 28.6,
+      "long": 77.2
+    },
+    "location": "India",
+    "name": "New Delhi"
+  },
+  {
+    "flag": "🇳🇮",
+    "coords": {
+      "lat": 12.13,
+      "long": -86.25
+    },
+    "location": "Nicaragua",
+    "name": "Managua"
+  },
+  {
+    "flag": "🇨🇫",
+    "coords": {
+      "lat": 4.37,
+      "long": 18.58
+    },
+    "location": "Central African Republic",
+    "name": "Bangui"
+  },
+  {
+    "flag": "🇨🇩",
+    "coords": {
+      "lat": -4.32,
+      "long": 15.3
+    },
+    "location": "DR Congo",
+    "name": "Kinshasa"
+  },
+  {
+    "flag": "🇲🇱",
+    "coords": {
+      "lat": 12.65,
+      "long": -8
+    },
+    "location": "Mali",
+    "name": "Bamako"
+  },
+  {
+    "flag": "🇦🇿",
+    "coords": {
+      "lat": 40.38,
+      "long": 49.87
+    },
+    "location": "Azerbaijan",
+    "name": "Baku"
+  },
+  {
+    "flag": "🇸🇬",
+    "coords": {
+      "lat": 1.28,
+      "long": 103.85
+    },
+    "location": "Singapore",
+    "name": "Singapore"
+  },
+  {
+    "flag": "🇨🇺",
+    "coords": {
+      "lat": 23.12,
+      "long": -82.35
+    },
+    "location": "Cuba",
+    "name": "Havana"
+  },
+  {
+    "flag": "🇧🇩",
+    "coords": {
+      "lat": 23.72,
+      "long": 90.4
+    },
+    "location": "Bangladesh",
+    "name": "Dhaka"
+  },
+  {
+    "flag": "🇲🇭",
+    "coords": {
+      "lat": 7.1,
+      "long": 171.38
+    },
+    "location": "Marshall Islands",
+    "name": "Majuro"
+  },
+  {
+    "flag": "🇱🇻",
+    "coords": {
+      "lat": 56.95,
+      "long": 24.1
+    },
+    "location": "Latvia",
+    "name": "Riga"
+  },
+  {
+    "flag": "🇭🇺",
+    "coords": {
+      "lat": 47.5,
+      "long": 19.08
+    },
+    "location": "Hungary",
+    "name": "Budapest"
+  },
+  {
+    "flag": "🇦🇽",
+    "coords": {
+      "lat": 60.12,
+      "long": 19.9
+    },
+    "location": "Åland Islands",
+    "name": "Mariehamn"
+  },
+  {
+    "flag": "🇧🇬",
+    "coords": {
+      "lat": 42.68,
+      "long": 23.32
+    },
+    "location": "Bulgaria",
+    "name": "Sofia"
+  },
+  {
+    "flag": "🇸🇨",
+    "coords": {
+      "lat": -4.62,
+      "long": 55.45
+    },
+    "location": "Seychelles",
+    "name": "Victoria"
+  },
+  {
+    "flag": "🇨🇲",
+    "coords": {
+      "lat": 3.85,
+      "long": 11.5
+    },
+    "location": "Cameroon",
+    "name": "Yaoundé"
+  },
+  {
+    "flag": "🇲🇽",
+    "coords": {
+      "lat": 19.43,
+      "long": -99.13
+    },
+    "location": "Mexico",
+    "name": "Mexico City"
+  },
+  {
+    "flag": "🇧🇳",
+    "coords": {
+      "lat": 4.88,
+      "long": 114.93
+    },
+    "location": "Brunei",
+    "name": "Bandar Seri Begawan"
+  },
+  {
+    "flag": "🇹🇼",
+    "coords": {
+      "lat": 25.03,
+      "long": 121.52
+    },
+    "location": "Taiwan",
+    "name": "Taipei"
+  },
+  {
+    "flag": "🇦🇼",
+    "coords": {
+      "lat": 12.52,
+      "long": -70.03
+    },
+    "location": "Aruba",
+    "name": "Oranjestad"
+  },
+  {
+    "flag": "🇹🇹",
+    "coords": {
+      "lat": 10.65,
+      "long": -61.52
+    },
+    "location": "Trinidad and Tobago",
+    "name": "Port of Spain"
+  },
+  {
+    "flag": "🇻🇺",
+    "coords": {
+      "lat": -17.73,
+      "long": 168.32
+    },
+    "location": "Vanuatu",
+    "name": "Port Vila"
+  },
+  {
+    "flag": "🇩🇿",
+    "coords": {
+      "lat": 36.75,
+      "long": 3.05
+    },
+    "location": "Algeria",
+    "name": "Algiers"
+  },
+  {
+    "flag": "🇨🇰",
+    "coords": {
+      "lat": -21.2,
+      "long": -159.77
+    },
+    "location": "Cook Islands",
+    "name": "Avarua"
+  },
+  {
+    "flag": "🇧🇮",
+    "coords": {
+      "lat": -3.43,
+      "long": 29.93
+    },
+    "location": "Burundi",
+    "name": "Gitega"
+  },
+  {
+    "flag": "🇧🇾",
+    "coords": {
+      "lat": 53.9,
+      "long": 27.57
+    },
+    "location": "Belarus",
+    "name": "Minsk"
+  },
+  {
+    "flag": "🇰🇵",
+    "coords": {
+      "lat": 39.02,
+      "long": 125.75
+    },
+    "location": "North Korea",
+    "name": "Pyongyang"
+  },
+  {
+    "flag": "🇲🇫",
+    "coords": {
+      "lat": 18.07,
+      "long": -63.08
+    },
+    "location": "Saint Martin",
+    "name": "Marigot"
+  },
+  {
+    "flag": "🇼🇸",
+    "coords": {
+      "lat": -13.82,
+      "long": -171.77
+    },
+    "location": "Samoa",
+    "name": "Apia"
+  },
+  {
+    "flag": "🇿🇼",
+    "coords": {
+      "lat": -17.82,
+      "long": 31.03
+    },
+    "location": "Zimbabwe",
+    "name": "Harare"
+  },
+  {
+    "flag": "🇧🇲",
+    "coords": {
+      "lat": 32.28,
+      "long": -64.78
+    },
+    "location": "Bermuda",
+    "name": "Hamilton"
+  },
+  {
+    "flag": "🇩🇯",
+    "coords": {
+      "lat": 11.58,
+      "long": 43.15
+    },
+    "location": "Djibouti",
+    "name": "Djibouti"
+  },
+  {
+    "flag": "🇬🇧",
+    "coords": {
+      "lat": 51.5,
+      "long": -0.08
+    },
+    "location": "United Kingdom",
+    "name": "London"
+  },
+  {
+    "flag": "🇳🇺",
+    "coords": {
+      "lat": -19.02,
+      "long": -169.92
+    },
+    "location": "Niue",
+    "name": "Alofi"
+  },
+  {
+    "flag": "🇬🇼",
+    "coords": {
+      "lat": 11.85,
+      "long": -15.58
+    },
+    "location": "Guinea-Bissau",
+    "name": "Bissau"
+  },
+  {
+    "flag": "🇯🇵",
+    "coords": {
+      "lat": 35.68,
+      "long": 139.75
+    },
+    "location": "Japan",
+    "name": "Tokyo"
+  },
+  {
+    "flag": "🇹🇻",
+    "coords": {
+      "lat": -8.52,
+      "long": 179.22
+    },
+    "location": "Tuvalu",
+    "name": "Funafuti"
+  },
+  {
+    "flag": "🇷🇪",
+    "coords": {
+      "lat": -20.88,
+      "long": 55.45
+    },
+    "location": "Réunion",
+    "name": "Saint-Denis"
+  },
+  {
+    "flag": "🇸🇩",
+    "coords": {
+      "lat": 15.6,
+      "long": 32.53
+    },
+    "location": "Sudan",
+    "name": "Khartoum"
+  },
+  {
+    "flag": "🇲🇰",
+    "coords": {
+      "lat": 42,
+      "long": 21.43
+    },
+    "location": "North Macedonia",
+    "name": "Skopje"
+  },
+  {
+    "flag": "🇨🇦",
+    "coords": {
+      "lat": 45.42,
+      "long": -75.7
+    },
+    "location": "Canada",
+    "name": "Ottawa"
+  },
+  {
+    "flag": "🇮🇩",
+    "coords": {
+      "lat": -6.17,
+      "long": 106.82
+    },
+    "location": "Indonesia",
+    "name": "Jakarta"
+  },
+  {
+    "flag": "🇬🇲",
+    "coords": {
+      "lat": 13.45,
+      "long": -16.57
+    },
+    "location": "Gambia",
+    "name": "Banjul"
+  },
+  {
+    "flag": "🇸🇴",
+    "coords": {
+      "lat": 2.07,
+      "long": 45.33
+    },
+    "location": "Somalia",
+    "name": "Mogadishu"
+  },
+  {
+    "flag": "🇲🇺",
+    "coords": {
+      "lat": -20.15,
+      "long": 57.48
+    },
+    "location": "Mauritius",
+    "name": "Port Louis"
+  },
+  {
+    "flag": "🇲🇸",
+    "coords": {
+      "lat": 16.7,
+      "long": -62.22
+    },
+    "location": "Montserrat",
+    "name": "Plymouth"
+  },
+  {
+    "flag": "🇷🇺",
+    "coords": {
+      "lat": 55.75,
+      "long": 37.6
+    },
+    "location": "Russia",
+    "name": "Moscow"
+  },
+  {
+    "flag": "🇵🇹",
+    "coords": {
+      "lat": 38.72,
+      "long": -9.13
+    },
+    "location": "Portugal",
+    "name": "Lisbon"
+  },
+  {
+    "flag": "🇴🇲",
+    "coords": {
+      "lat": 23.62,
+      "long": 58.58
+    },
+    "location": "Oman",
+    "name": "Muscat"
+  },
+  {
+    "flag": "🇨🇽",
+    "coords": {
+      "lat": -10.42,
+      "long": 105.68
+    },
+    "location": "Christmas Island",
+    "name": "Flying Fish Cove"
+  },
+  {
+    "flag": "🇭🇷",
+    "coords": {
+      "lat": 45.8,
+      "long": 16
+    },
+    "location": "Croatia",
+    "name": "Zagreb"
+  },
+  {
+    "flag": "🇲🇳",
+    "coords": {
+      "lat": 47.92,
+      "long": 106.91
+    },
+    "location": "Mongolia",
+    "name": "Ulan Bator"
+  },
+  {
+    "flag": "🇹🇯",
+    "coords": {
+      "lat": 38.55,
+      "long": 68.77
+    },
+    "location": "Tajikistan",
+    "name": "Dushanbe"
+  },
+  {
+    "flag": "🇸🇧",
+    "coords": {
+      "lat": -9.43,
+      "long": 159.95
+    },
+    "location": "Solomon Islands",
+    "name": "Honiara"
+  },
+  {
+    "flag": "🇭🇹",
+    "coords": {
+      "lat": 18.53,
+      "long": -72.33
+    },
+    "location": "Haiti",
+    "name": "Port-au-Prince"
+  },
+  {
+    "flag": "🇭🇳",
+    "coords": {
+      "lat": 14.1,
+      "long": -87.22
+    },
+    "location": "Honduras",
+    "name": "Tegucigalpa"
+  },
+  {
+    "flag": "🇳🇦",
+    "coords": {
+      "lat": -22.57,
+      "long": 17.08
+    },
+    "location": "Namibia",
+    "name": "Windhoek"
+  },
+  {
+    "flag": "🇦🇷",
+    "coords": {
+      "lat": -34.58,
+      "long": -58.67
+    },
+    "location": "Argentina",
+    "name": "Buenos Aires"
+  },
+  {
+    "flag": "🇳🇪",
+    "coords": {
+      "lat": 13.52,
+      "long": 2.12
+    },
+    "location": "Niger",
+    "name": "Niamey"
+  },
+  {
+    "flag": "🇹🇱",
+    "coords": {
+      "lat": -8.58,
+      "long": 125.6
+    },
+    "location": "Timor-Leste",
+    "name": "Dili"
+  },
+  {
+    "flag": "🇪🇭",
+    "coords": {
+      "lat": -13.28,
+      "long": 27.14
+    },
+    "location": "Western Sahara",
+    "name": "El Aaiún"
+  },
+  {
+    "flag": "🇺🇾",
+    "coords": {
+      "lat": -34.85,
+      "long": -56.17
+    },
+    "location": "Uruguay",
+    "name": "Montevideo"
+  },
+  {
+    "flag": "🇧🇧",
+    "coords": {
+      "lat": 13.1,
+      "long": -59.62
+    },
+    "location": "Barbados",
+    "name": "Bridgetown"
+  },
+  {
+    "flag": "🇬🇬",
+    "coords": {
+      "lat": 49.45,
+      "long": -2.54
+    },
+    "location": "Guernsey",
+    "name": "St. Peter Port"
+  },
+  {
+    "flag": "🇪🇪",
+    "coords": {
+      "lat": 59.43,
+      "long": 24.72
+    },
+    "location": "Estonia",
+    "name": "Tallinn"
+  },
+  {
+    "flag": "🇰🇪",
+    "coords": {
+      "lat": -1.28,
+      "long": 36.82
+    },
+    "location": "Kenya",
+    "name": "Nairobi"
+  },
+  {
+    "flag": "🇯🇲",
+    "coords": {
+      "lat": 17.99702,
+      "long": -76.79358
+    },
+    "location": "Jamaica",
+    "name": "Kingston"
+  },
+  {
+    "flag": "🇱🇺",
+    "coords": {
+      "lat": 49.6,
+      "long": 6.12
+    },
+    "location": "Luxembourg",
+    "name": "Luxembourg"
+  },
+  {
+    "flag": "🇬🇵",
+    "coords": {
+      "lat": 16.03,
+      "long": -61.73
+    },
+    "location": "Guadeloupe",
+    "name": "Basse-Terre"
+  },
+  {
+    "flag": "🇹🇳",
+    "coords": {
+      "lat": 36.8,
+      "long": 10.18
+    },
+    "location": "Tunisia",
+    "name": "Tunis"
+  },
+  {
+    "flag": "🇰🇾",
+    "coords": {
+      "lat": 19.3,
+      "long": -81.38
+    },
+    "location": "Cayman Islands",
+    "name": "George Town"
+  },
+  {
+    "flag": "🇲🇿",
+    "coords": {
+      "lat": -25.95,
+      "long": 32.58
+    },
+    "location": "Mozambique",
+    "name": "Maputo"
+  },
+  {
+    "flag": "🇹🇰",
+    "coords": {
+      "lat": -9.38,
+      "long": -171.22
+    },
+    "location": "Tokelau",
+    "name": "Fakaofo"
+  },
+  {
+    "flag": "🇩🇪",
+    "coords": {
+      "lat": 52.52,
+      "long": 13.4
+    },
+    "location": "Germany",
+    "name": "Berlin"
+  },
+  {
+    "flag": "🇱🇷",
+    "coords": {
+      "lat": 6.3,
+      "long": -10.8
+    },
+    "location": "Liberia",
+    "name": "Monrovia"
+  },
+  {
+    "flag": "🇵🇳",
+    "coords": {
+      "lat": -25.07,
+      "long": -130.08
+    },
+    "location": "Pitcairn Islands",
+    "name": "Adamstown"
+  },
+  {
+    "flag": "🇵🇲",
+    "coords": {
+      "lat": 46.77,
+      "long": -56.18
+    },
+    "location": "Saint Pierre and Miquelon",
+    "name": "Saint-Pierre"
+  },
+  {
+    "flag": "🇸🇸",
+    "coords": {
+      "lat": 4.85,
+      "long": 31.62
+    },
+    "location": "South Sudan",
+    "name": "Juba"
+  },
+  {
+    "flag": "🇸🇰",
+    "coords": {
+      "lat": 48.15,
+      "long": 17.12
+    },
+    "location": "Slovakia",
+    "name": "Bratislava"
+  },
+  {
+    "flag": "🇵🇼",
+    "coords": {
+      "lat": 7.5,
+      "long": 134.62
+    },
+    "location": "Palau",
+    "name": "Ngerulmud"
+  },
+  {
+    "flag": "🇨🇾",
+    "coords": {
+      "lat": 35.17,
+      "long": 33.37
+    },
+    "location": "Cyprus",
+    "name": "Nicosia"
+  },
+  {
+    "flag": "🇱🇾",
+    "coords": {
+      "lat": 32.88,
+      "long": 13.17
+    },
+    "location": "Libya",
+    "name": "Tripoli"
+  },
+  {
+    "flag": "🇾🇹",
+    "coords": {
+      "lat": -12.78,
+      "long": 45.22
+    },
+    "location": "Mayotte",
+    "name": "Mamoudzou"
+  },
+  {
+    "flag": "🇹🇲",
+    "coords": {
+      "lat": 37.95,
+      "long": 58.38
+    },
+    "location": "Turkmenistan",
+    "name": "Ashgabat"
+  },
+  {
+    "flag": "🇬🇶",
+    "coords": {
+      "lat": 3.75,
+      "long": 8.78
+    },
+    "location": "Equatorial Guinea",
+    "name": "Malabo"
+  },
+  {
+    "flag": "🇳🇬",
+    "coords": {
+      "lat": 9.08,
+      "long": 7.53
+    },
+    "location": "Nigeria",
+    "name": "Abuja"
+  },
+  {
+    "flag": "🇳🇴",
+    "coords": {
+      "lat": 59.92,
+      "long": 10.75
+    },
+    "location": "Norway",
+    "name": "Oslo"
+  },
+  {
+    "flag": "🇧🇦",
+    "coords": {
+      "lat": 43.87,
+      "long": 18.42
+    },
+    "location": "Bosnia and Herzegovina",
+    "name": "Sarajevo"
+  },
+  {
+    "flag": "🇿🇦",
+    "coords": {
+      "lat": -25.7,
+      "long": 28.22
+    },
+    "location": "South Africa",
+    "name": "Pretoria"
+  },
+  {
+    "flag": "🇩🇰",
+    "coords": {
+      "lat": 55.67,
+      "long": 12.58
+    },
+    "location": "Denmark",
+    "name": "Copenhagen"
+  },
+  {
+    "flag": "🇱🇦",
+    "coords": {
+      "lat": 17.97,
+      "long": 102.6
+    },
+    "location": "Laos",
+    "name": "Vientiane"
+  },
+  {
+    "flag": "🇲🇬",
+    "coords": {
+      "lat": -18.92,
+      "long": 47.52
+    },
+    "location": "Madagascar",
+    "name": "Antananarivo"
+  },
+  {
+    "flag": "🇸🇻",
+    "coords": {
+      "lat": 13.7,
+      "long": -89.2
+    },
+    "location": "El Salvador",
+    "name": "San Salvador"
+  },
+  {
+    "flag": "🇦🇩",
+    "coords": {
+      "lat": 42.5,
+      "long": 1.52
+    },
+    "location": "Andorra",
+    "name": "Andorra la Vella"
+  },
+  {
+    "flag": "🇱🇰",
+    "coords": {
+      "lat": 6.89,
+      "long": 79.9
+    },
+    "location": "Sri Lanka",
+    "name": "Sri Jayawardenepura Kotte"
+  },
+  {
+    "flag": "🇷🇼",
+    "coords": {
+      "lat": -1.95,
+      "long": 30.05
+    },
+    "location": "Rwanda",
+    "name": "Kigali"
+  },
+  {
+    "flag": "🇦🇲",
+    "coords": {
+      "lat": 40.17,
+      "long": 44.5
+    },
+    "location": "Armenia",
+    "name": "Yerevan"
+  },
+  {
+    "flag": "🇹🇩",
+    "coords": {
+      "lat": 12.1,
+      "long": 15.03
+    },
+    "location": "Chad",
+    "name": "N'Djamena"
+  },
+  {
+    "flag": "🇧🇯",
+    "coords": {
+      "lat": 6.48,
+      "long": 2.62
+    },
+    "location": "Benin",
+    "name": "Porto-Novo"
+  },
+  {
+    "flag": "🇸🇾",
+    "coords": {
+      "lat": 33.5,
+      "long": 36.3
+    },
+    "location": "Syria",
+    "name": "Damascus"
+  },
+  {
+    "flag": "🇪🇸",
+    "coords": {
+      "lat": 40.4,
+      "long": -3.68
+    },
+    "location": "Spain",
+    "name": "Madrid"
+  },
+  {
+    "flag": "🇹🇭",
+    "coords": {
+      "lat": 13.75,
+      "long": 100.52
+    },
+    "location": "Thailand",
+    "name": "Bangkok"
+  },
+  {
+    "flag": "🇸🇯",
+    "coords": {
+      "lat": 78.22,
+      "long": 15.63
+    },
+    "location": "Svalbard and Jan Mayen",
+    "name": "Longyearbyen"
+  },
+  {
+    "flag": "🇺🇦",
+    "coords": {
+      "lat": 50.43,
+      "long": 30.52
+    },
+    "location": "Ukraine",
+    "name": "Kyiv"
+  },
+  {
+    "flag": "🇨🇳",
+    "coords": {
+      "lat": 39.92,
+      "long": 116.38
+    },
+    "location": "China",
+    "name": "Beijing"
+  },
+  {
+    "flag": "🇲🇼",
+    "coords": {
+      "lat": -13.97,
+      "long": 33.78
+    },
+    "location": "Malawi",
+    "name": "Lilongwe"
+  },
+  {
+    "flag": "🇵🇦",
+    "coords": {
+      "lat": 8.97,
+      "long": -79.53
+    },
+    "location": "Panama",
+    "name": "Panama City"
+  },
+  {
+    "flag": "🇧🇭",
+    "coords": {
+      "lat": 26.23,
+      "long": 50.57
+    },
+    "location": "Bahrain",
+    "name": "Manama"
+  },
+  {
+    "flag": "🇻🇨",
+    "coords": {
+      "lat": 13.13,
+      "long": -61.22
+    },
+    "location": "Saint Vincent and the Grenadines",
+    "name": "Kingstown"
+  },
+  {
+    "flag": "🇯🇪",
+    "coords": {
+      "lat": 49.18,
+      "long": -2.1
+    },
+    "location": "Jersey",
+    "name": "Saint Helier"
+  },
+  {
+    "flag": "🇧🇫",
+    "coords": {
+      "lat": 12.37,
+      "long": -1.52
+    },
+    "location": "Burkina Faso",
+    "name": "Ouagadougou"
+  },
+  {
+    "flag": "🇵🇱",
+    "coords": {
+      "lat": 52.25,
+      "long": 21
+    },
+    "location": "Poland",
+    "name": "Warsaw"
+  },
+  {
+    "flag": "🇧🇪",
+    "coords": {
+      "lat": 50.83,
+      "long": 4.33
+    },
+    "location": "Belgium",
+    "name": "Brussels"
+  },
+  {
+    "flag": "🇧🇸",
+    "coords": {
+      "lat": 25.08,
+      "long": -77.35
+    },
+    "location": "Bahamas",
+    "name": "Nassau"
+  },
+  {
+    "flag": "🇨🇷",
+    "coords": {
+      "lat": 9.93,
+      "long": -84.09
+    },
+    "location": "Costa Rica",
+    "name": "San José"
+  },
+  {
+    "flag": "🇸🇲",
+    "coords": {
+      "lat": 43.94,
+      "long": 12.45
+    },
+    "location": "San Marino",
+    "name": "City of San Marino"
+  },
+  {
+    "flag": "🇳🇿",
+    "coords": {
+      "lat": -41.3,
+      "long": 174.78
+    },
+    "location": "New Zealand",
+    "name": "Wellington"
+  },
+  {
+    "flag": "🇬🇫",
+    "coords": {
+      "lat": 4.94,
+      "long": -52.33
+    },
+    "location": "French Guiana",
+    "name": "Cayenne"
+  },
+  {
+    "flag": "🇳🇫",
+    "coords": {
+      "lat": -29.05,
+      "long": 167.97
+    },
+    "location": "Norfolk Island",
+    "name": "Kingston"
+  },
+  {
+    "flag": "🇱🇧",
+    "coords": {
+      "lat": 33.87,
+      "long": 35.5
+    },
+    "location": "Lebanon",
+    "name": "Beirut"
+  },
+  {
+    "flag": "🇿🇲",
+    "coords": {
+      "lat": -15.42,
+      "long": 28.28
+    },
+    "location": "Zambia",
+    "name": "Lusaka"
+  },
+  {
+    "flag": "🇸🇿",
+    "coords": {
+      "lat": -26.32,
+      "long": 31.13
+    },
+    "location": "Eswatini",
+    "name": "Mbabane"
+  },
+  {
+    "flag": "🇵🇸",
+    "coords": {
+      "lat": 31.9,
+      "long": 35.2
+    },
+    "location": "Palestine",
+    "name": "Ramallah"
+  }
+]

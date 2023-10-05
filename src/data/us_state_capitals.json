@@ -1,0 +1,402 @@
+[
+  {
+    "coords": {
+      "lat": 32.361538,
+      "long": -86.279118
+    },
+    "location": "Alabama",
+    "name": "Montgomery"
+  },
+  {
+    "coords": {
+      "lat": 58.301935,
+      "long": -134.41974
+    },
+    "location": "Alaska",
+    "name": "Juneau"
+  },
+  {
+    "coords": {
+      "lat": 33.448457,
+      "long": -112.073844
+    },
+    "location": "Arizona",
+    "name": "Phoenix"
+  },
+  {
+    "coords": {
+      "lat": 34.736009,
+      "long": -92.331122
+    },
+    "location": "Arkansas",
+    "name": "Little Rock"
+  },
+  {
+    "coords": {
+      "lat": 38.555605,
+      "long": -121.468926
+    },
+    "location": "California",
+    "name": "Sacramento"
+  },
+  {
+    "coords": {
+      "lat": 39.7391667,
+      "long": -104.984167
+    },
+    "location": "Colorado",
+    "name": "Denver"
+  },
+  {
+    "coords": {
+      "lat": 41.767,
+      "long": -72.677
+    },
+    "location": "Connecticut",
+    "name": "Hartford"
+  },
+  {
+    "coords": {
+      "lat": 39.161921,
+      "long": -75.526755
+    },
+    "location": "Delaware",
+    "name": "Dover"
+  },
+  {
+    "coords": {
+      "lat": 30.4518,
+      "long": -84.27277
+    },
+    "location": "Florida",
+    "name": "Tallahassee"
+  },
+  {
+    "coords": {
+      "lat": 33.76,
+      "long": -84.39
+    },
+    "location": "Georgia",
+    "name": "Atlanta"
+  },
+  {
+    "coords": {
+      "lat": 21.30895,
+      "long": -157.826182
+    },
+    "location": "Hawaii",
+    "name": "Honolulu"
+  },
+  {
+    "coords": {
+      "lat": 43.613739,
+      "long": -116.237651
+    },
+    "location": "Idaho",
+    "name": "Boise"
+  },
+  {
+    "coords": {
+      "lat": 39.78325,
+      "long": -89.650373
+    },
+    "location": "Illinois",
+    "name": "Springfield"
+  },
+  {
+    "coords": {
+      "lat": 39.790942,
+      "long": -86.147685
+    },
+    "location": "Indiana",
+    "name": "Indianapolis"
+  },
+  {
+    "coords": {
+      "lat": 41.590939,
+      "long": -93.620866
+    },
+    "location": "Iowa",
+    "name": "Des Moines"
+  },
+  {
+    "coords": {
+      "lat": 39.04,
+      "long": -95.69
+    },
+    "location": "Kansas",
+    "name": "Topeka"
+  },
+  {
+    "coords": {
+      "lat": 38.197274,
+      "long": -84.86311
+    },
+    "location": "Kentucky",
+    "name": "Frankfort"
+  },
+  {
+    "coords": {
+      "lat": 30.45809,
+      "long": -91.140229
+    },
+    "location": "Louisiana",
+    "name": "Baton Rouge"
+  },
+  {
+    "coords": {
+      "lat": 44.323535,
+      "long": -69.765261
+    },
+    "location": "Maine",
+    "name": "Augusta"
+  },
+  {
+    "coords": {
+      "lat": 38.972945,
+      "long": -76.501157
+    },
+    "location": "Maryland",
+    "name": "Annapolis"
+  },
+  {
+    "coords": {
+      "lat": 42.2352,
+      "long": -71.0275
+    },
+    "location": "Massachusetts",
+    "name": "Boston"
+  },
+  {
+    "coords": {
+      "lat": 42.7335,
+      "long": -84.5467
+    },
+    "location": "Michigan",
+    "name": "Lansing"
+  },
+  {
+    "coords": {
+      "lat": 44.95,
+      "long": -93.094
+    },
+    "location": "Minnesota",
+    "name": "Saint Paul"
+  },
+  {
+    "coords": {
+      "lat": 32.32,
+      "long": -90.207
+    },
+    "location": "Mississippi",
+    "name": "Jackson"
+  },
+  {
+    "coords": {
+      "lat": 38.572954,
+      "long": -92.189283
+    },
+    "location": "Missouri",
+    "name": "Jefferson City"
+  },
+  {
+    "coords": {
+      "lat": 46.595805,
+      "long": -112.027031
+    },
+    "location": "Montana",
+    "name": "Helana"
+  },
+  {
+    "coords": {
+      "lat": 40.809868,
+      "long": -96.675345
+    },
+    "location": "Nebraska",
+    "name": "Lincoln"
+  },
+  {
+    "coords": {
+      "lat": 39.160949,
+      "long": -119.753877
+    },
+    "location": "Nevada",
+    "name": "Carson City"
+  },
+  {
+    "coords": {
+      "lat": 43.220093,
+      "long": -71.549127
+    },
+    "location": "New Hampshire",
+    "name": "Concord"
+  },
+  {
+    "coords": {
+      "lat": 40.221741,
+      "long": -74.756138
+    },
+    "location": "New Jersey",
+    "name": "Trenton"
+  },
+  {
+    "coords": {
+      "lat": 35.667231,
+      "long": -105.964575
+    },
+    "location": "New Mexico",
+    "name": "Santa Fe"
+  },
+  {
+    "coords": {
+      "lat": 42.659829,
+      "long": -73.781339
+    },
+    "location": "New York",
+    "name": "Albany"
+  },
+  {
+    "coords": {
+      "lat": 35.771,
+      "long": -78.638
+    },
+    "location": "North Carolina",
+    "name": "Raleigh"
+  },
+  {
+    "coords": {
+      "lat": 48.813343,
+      "long": -100.779004
+    },
+    "location": "North Dakota",
+    "name": "Bismarck"
+  },
+  {
+    "coords": {
+      "lat": 39.962245,
+      "long": -83.000647
+    },
+    "location": "Ohio",
+    "name": "Columbus"
+  },
+  {
+    "coords": {
+      "lat": 35.482309,
+      "long": -97.534994
+    },
+    "location": "Oklahoma",
+    "name": "Oklahoma City"
+  },
+  {
+    "coords": {
+      "lat": 44.931109,
+      "long": -123.029159
+    },
+    "location": "Oregon",
+    "name": "Salem"
+  },
+  {
+    "coords": {
+      "lat": 40.269789,
+      "long": -76.875613
+    },
+    "location": "Pennsylvania",
+    "name": "Harrisburg"
+  },
+  {
+    "coords": {
+      "lat": 41.82355,
+      "long": -71.422132
+    },
+    "location": "Rhode Island",
+    "name": "Providence"
+  },
+  {
+    "coords": {
+      "lat": 34.0,
+      "long": -81.035
+    },
+    "location": "South Carolina",
+    "name": "Columbia"
+  },
+  {
+    "coords": {
+      "lat": 44.367966,
+      "long": -100.336378
+    },
+    "location": "South Dakota",
+    "name": "Pierre"
+  },
+  {
+    "coords": {
+      "lat": 36.165,
+      "long": -86.784
+    },
+    "location": "Tennessee",
+    "name": "Nashville"
+  },
+  {
+    "coords": {
+      "lat": 30.266667,
+      "long": -97.75
+    },
+    "location": "Texas",
+    "name": "Austin"
+  },
+  {
+    "coords": {
+      "lat": 40.7547,
+      "long": -111.892622
+    },
+    "location": "Utah",
+    "name": "Salt Lake City"
+  },
+  {
+    "coords": {
+      "lat": 44.26639,
+      "long": -72.57194
+    },
+    "location": "Vermont",
+    "name": "Montpelier"
+  },
+  {
+    "coords": {
+      "lat": 37.54,
+      "long": -77.46
+    },
+    "location": "Virginia",
+    "name": "Richmond"
+  },
+  {
+    "coords": {
+      "lat": 47.042418,
+      "long": -122.893077
+    },
+    "location": "Washington",
+    "name": "Olympia"
+  },
+  {
+    "coords": {
+      "lat": 38.349497,
+      "long": -81.633294
+    },
+    "location": "West Virginia",
+    "name": "Charleston"
+  },
+  {
+    "coords": {
+      "lat": 43.074722,
+      "long": -89.384444
+    },
+    "location": "Wisconsin",
+    "name": "Madison"
+  },
+  {
+    "coords": {
+      "lat": 41.145548,
+      "long": -104.802042
+    },
+    "location": "Wyoming",
+    "name": "Cheyenne"
+  }
+]
