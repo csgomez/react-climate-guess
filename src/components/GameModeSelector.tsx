@@ -10,6 +10,7 @@ const GameModeSelector = ({
   onSwitchGameMode,
 }: GameModeSelectorProps) => {
   const nextGameMode = currentGameMode === 'world' ? 'us' : 'world';
+
   return (
     <div>
       Current Mode: {currentGameMode}
