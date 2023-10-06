@@ -10,3 +10,8 @@ export type City = {
   flag?: string; // emoji flag
   temp?: number; // in fahrenheit
 };
+
+export type Score = {
+  correct: number;
+  incorrect: number;
+};

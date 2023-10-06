@@ -2,6 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+.cityCard {
+  height: 180px;
+}
+
 .cityCard:first-child {
   margin-bottom: 1rem;
 }
@@ -9,7 +13,6 @@
 @media (min-width: 768px) {
   .cityCard {
     width: 350px;
-    height: 180px;
   }
 
   .cityCard:first-child {

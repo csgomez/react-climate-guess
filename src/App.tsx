@@ -3,9 +3,10 @@ import worldCountryCapitals from './data/world_country_capitals.json';
 import usStateCapitals from './data/us_state_capitals.json';
 import { getTwoRandomCities } from './utils';
 import { fetchTemperatureByCity } from './services/geoweather';
-import { GameMode, City } from './types';
+import { GameMode, City, Score } from './types';
 import GameModeSelector from './components/GameModeSelector';
 import CityCard from './components/CityCard';
+import ScoreStats from './components/ScoreStats';
 // import './App.css';
 
 const citiesData = {
@@ -18,6 +19,7 @@ function App() {
   const [currentCities, setCurrentCities] = useState<City[]>([]);
   const [temps, setTemps] = useState<number[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
+  const [score, setScore] = useState<Score>({ correct: 0, incorrect: 0 });
   const warmerCity = getWarmerCity();
   const isWaitingForPlayer = selectedCity === null;
 
@@ -60,6 +62,15 @@ function App() {
     setCurrentGameMode((prev) => (prev === 'world' ? 'us' : 'world'));
   };
 
+  const handleSelectCity = (city: City) => {
+    setSelectedCity(city);
+    if (city === warmerCity) {
+      setScore((prev) => ({ ...prev, correct: prev.correct + 1 }));
+    } else {
+      setScore((prev) => ({ ...prev, incorrect: prev.incorrect + 1 }));
+    }
+  };
+
   return (
     <div className="text-center">
       <header className="py-3">
@@ -76,7 +87,7 @@ function App() {
               key={index}
               city={city}
               temperature={temps[index]}
-              onSelectCity={setSelectedCity}
+              onSelectCity={handleSelectCity}
               selectedCity={selectedCity}
               warmerCity={warmerCity}
             />
@@ -93,6 +104,7 @@ function App() {
             Next Cities
           </button>
         </div>
+        <ScoreStats score={score} />
       </main>
     </div>
   );

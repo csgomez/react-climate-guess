@@ -42,7 +42,7 @@ const CityCard = ({
         <span className="flagEmoji">{city.flag}</span>
         {city.name}, {city.location}
       </p>
-      <p> {hasTemperature && `${temperature}°F`}</p>
+      <p> {isWaitingForPlayer ? '' : `${temperature}°F`}</p>
       <div className="d-grid col-6 mx-auto">
         <button
           className={`btn ${
