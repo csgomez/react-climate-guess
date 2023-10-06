@@ -14,8 +14,8 @@ const citiesData = {
 };
 
 function App() {
-  const [currentGameMode, setGameMode] = useState<GameMode>('world');
-  const [currentCities, setCities] = useState<City[]>([]);
+  const [currentGameMode, setCurrentGameMode] = useState<GameMode>('world');
+  const [currentCities, setCurrentCities] = useState<City[]>([]);
   const [temps, setTemps] = useState<number[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
   const warmerCity = getWarmerCity();
@@ -34,7 +34,7 @@ function App() {
     const currentCitiesData = citiesData[currentGameMode];
     const newCities = getTwoRandomCities(currentCitiesData);
 
-    setCities(newCities);
+    setCurrentCities(newCities);
   };
 
   // After the initial render and whenver the GameMode changes
@@ -42,7 +42,7 @@ function App() {
     const currentCitiesData = citiesData[currentGameMode];
     const newCities = getTwoRandomCities(currentCitiesData);
 
-    setCities(newCities);
+    setCurrentCities(newCities);
   }, [currentGameMode]);
 
   // Whenever the cities are changed, fetch their live temperatures
@@ -58,7 +58,7 @@ function App() {
   }, [currentCities]);
 
   const switchGameMode = () => {
-    setGameMode((prev) => (prev === 'world' ? 'us' : 'world'));
+    setCurrentGameMode((prev) => (prev === 'world' ? 'us' : 'world'));
   };
 
   const selectCity = (city: City) => {
