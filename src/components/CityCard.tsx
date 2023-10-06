@@ -1,4 +1,6 @@
 import { City } from '../types';
+// import styles from './CityCard.module.css';
+import './CityCard.css';
 
 interface CityCardProps {
   city: City;
@@ -18,22 +20,40 @@ const CityCard = ({
   const hasTemperature = temperature !== undefined;
   const isSelectedCity = selectedCity === city;
   const isWarmerCity = warmerCity === city;
+  const isWaitingForPlayer = selectedCity === null;
 
-  const onSelectionMadeElement = (
-    <>
-      <p>{isSelectedCity ? 'SELECTED' : 'NOT SELECTED'}</p>
-      <p>{isWarmerCity ? 'WARMER' : 'colder'}</p>
-    </>
-  );
+  const getBorderColor = () => {
+    if (isWaitingForPlayer) {
+      return 'black';
+    }
+
+    if (isSelectedCity) {
+      return isWarmerCity ? 'success' : 'danger';
+    } else {
+      return 'black';
+    }
+  };
 
   return (
-    <div className="capital">
+    <div
+      className={`cityCard d-flex flex-column justify-content-between align-items-center py-3 border rounded border-${getBorderColor()}`}
+    >
       <p>
-        {Boolean(city.flag) && city.flag} {city.name}, {city.location}
+        <span className="flagEmoji">{city.flag}</span>
+        {city.name}, {city.location}
       </p>
       <p> {hasTemperature && `${temperature}°F`}</p>
-      {selectedCity !== null && onSelectionMadeElement}
-      <button onClick={() => onSelectCity(city)}>Choose</button>
+      <div className="d-grid col-6 mx-auto">
+        <button
+          className={`btn ${
+            isWaitingForPlayer ? 'btn-primary' : 'btn-outline-primary'
+          }`}
+          onClick={() => onSelectCity(city)}
+          disabled={selectedCity !== null}
+        >
+          Choose
+        </button>
+      </div>
     </div>
   );
 };

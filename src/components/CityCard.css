@@ -1,0 +1,19 @@
+.flagEmoji {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.cityCard:first-child {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cityCard {
+    width: 350px;
+    height: 180px;
+  }
+
+  .cityCard:first-child {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}

@@ -12,9 +12,12 @@ const GameModeSelector = ({
   const nextGameMode = currentGameMode === 'world' ? 'us' : 'world';
 
   return (
-    <div>
+    <div className="d-inline-block my-2 border border-black">
       Current Mode: {currentGameMode}
-      <button style={{ marginLeft: '1rem' }} onClick={onSwitchGameMode}>
+      <button
+        className="btn btn-sm btn-outline-primary ms-3"
+        onClick={onSwitchGameMode}
+      >
         Switch to {nextGameMode}
       </button>
     </div>

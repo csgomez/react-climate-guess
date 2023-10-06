@@ -6,7 +6,7 @@ import { fetchTemperatureByCity } from './services/geoweather';
 import { GameMode, City } from './types';
 import GameModeSelector from './components/GameModeSelector';
 import CityCard from './components/CityCard';
-import './App.css';
+// import './App.css';
 
 const citiesData = {
   world: worldCountryCapitals,
@@ -19,6 +19,7 @@ function App() {
   const [temps, setTemps] = useState<number[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
   const warmerCity = getWarmerCity();
+  const isWaitingForPlayer = selectedCity === null;
 
   function getWarmerCity() {
     if (temps.length !== 2) return null;
@@ -60,18 +61,16 @@ function App() {
   };
 
   return (
-    <>
-      <header>
-        <h3>
-          Weather Game <small>or something like that</small>
-        </h3>
+    <div className="text-center">
+      <header className="py-3">
+        <h3 className="mb-0">Weather Game</h3>
       </header>
-      <GameModeSelector
-        currentGameMode={currentGameMode}
-        onSwitchGameMode={switchGameMode}
-      />
-      <main>
-        <div className="capital-choices">
+      <main className="container">
+        <GameModeSelector
+          currentGameMode={currentGameMode}
+          onSwitchGameMode={switchGameMode}
+        />
+        <div className="d-flex flex-column flex-md-row justify-content-md-center">
           {currentCities.map((city, index) => (
             <CityCard
               key={index}
@@ -83,9 +82,19 @@ function App() {
             />
           ))}
         </div>
-        <button onClick={changeCurrentCities}>New Cities</button>
+        <div className="d-grid col-8 col-md-4 mx-auto">
+          <button
+            className={`btn mt-4 my-2 ${
+              isWaitingForPlayer ? 'btn-outline-primary' : 'btn-primary'
+            }`}
+            onClick={changeCurrentCities}
+            disabled={isWaitingForPlayer}
+          >
+            Next Cities
+          </button>
+        </div>
       </main>
-    </>
+    </div>
   );
 }
 
