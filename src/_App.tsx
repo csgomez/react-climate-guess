@@ -4,19 +4,9 @@ import usStateCapitals from './data/us_state_capitals.json';
 import { getTwoRandomCities } from './utils';
 import { fetchTemperatureByCity } from './services/geoweather';
 import './App.css';
+import { City } from './types';
 
 type GameMode = 'world' | 'us';
-
-export type City = {
-  name: string; // name of the city
-  location: string; // country or state of city
-  coords: {
-    lat: number;
-    long: number;
-  };
-  flag?: string; // emoji flag
-  temp?: number; // in fahrenheit
-};
 
 const citiesData = {
   world: worldCountryCapitals,

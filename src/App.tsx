@@ -1,22 +1,12 @@
-import { useEffect, useState, memo } from 'react';
+import { useEffect, useState } from 'react';
 import worldCountryCapitals from './data/world_country_capitals.json';
 import usStateCapitals from './data/us_state_capitals.json';
 import { getTwoRandomCities } from './utils';
 import { fetchTemperatureByCity } from './services/geoweather';
+import { GameMode, City } from './types';
 import './App.css';
-
-type GameMode = 'world' | 'us';
-
-export type City = {
-  name: string; // name of the city
-  location: string; // country or state of city
-  coords: {
-    lat: number;
-    long: number;
-  };
-  flag?: string; // emoji flag
-  temp?: number; // in fahrenheit
-};
+import GameModeSelector from './components/GameModeSelector';
+import CityCard from './components/CityCard';
 
 const citiesData = {
   world: worldCountryCapitals,
@@ -24,8 +14,8 @@ const citiesData = {
 };
 
 function App() {
-  const [gameMode, setGameMode] = useState<GameMode>('world');
-  const [cities, setCities] = useState<City[]>([]);
+  const [currentGameMode, setGameMode] = useState<GameMode>('world');
+  const [currentCities, setCities] = useState<City[]>([]);
   const [temps, setTemps] = useState<number[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
   const warmerCity = getWarmerCity();
@@ -34,36 +24,38 @@ function App() {
     if (temps.length !== 2) return null;
 
     // 'temps' and 'cities' indexes are one to one
-    return temps[0] > temps[1] ? cities[0] : cities[1];
+    return temps[0] > temps[1] ? currentCities[0] : currentCities[1];
   }
 
   // When the user presses the 'New Cities' button
   const changeCurrentCities = () => {
     setSelectedCity(null);
 
-    const currentCitiesData = citiesData[gameMode];
+    const currentCitiesData = citiesData[currentGameMode];
     const newCities = getTwoRandomCities(currentCitiesData);
 
     setCities(newCities);
   };
 
+  // After the initial render and whenver the GameMode changes
   useEffect(() => {
-    const currentCitiesData = citiesData[gameMode];
+    const currentCitiesData = citiesData[currentGameMode];
     const newCities = getTwoRandomCities(currentCitiesData);
 
     setCities(newCities);
-  }, [gameMode]);
+  }, [currentGameMode]);
 
+  // Whenever the cities are changed, fetch their live temperatures
   useEffect(() => {
     const fetchTemps = async () => {
       const newTemps = await Promise.all(
-        cities.map((city) => fetchTemperatureByCity(city))
+        currentCities.map((city) => fetchTemperatureByCity(city))
       );
       setTemps(newTemps);
     };
 
     fetchTemps();
-  }, [cities]);
+  }, [currentCities]);
 
   const switchGameMode = () => {
     setGameMode((prev) => (prev === 'world' ? 'us' : 'world'));
@@ -81,12 +73,12 @@ function App() {
         </h3>
       </header>
       <GameModeSelector
-        currentGameMode={gameMode}
-        switchGameMode={switchGameMode}
+        currentGameMode={currentGameMode}
+        onSwitchGameMode={switchGameMode}
       />
       <main>
         <div className="capital-choices">
-          {cities.map((city, index) => (
+          {currentCities.map((city, index) => (
             <CityCard
               key={index}
               city={city}
@@ -102,65 +94,5 @@ function App() {
     </>
   );
 }
-
-interface CityCardProps {
-  city: City;
-  temperature: number;
-  onSelectCity: (city: City) => void;
-  selectedCity: City | null;
-  warmerCity: City | null;
-}
-
-const CityCard = memo(
-  ({
-    city,
-    temperature,
-    onSelectCity,
-    selectedCity,
-    warmerCity,
-  }: CityCardProps) => {
-    const hasTemperature = temperature !== undefined;
-    const isSelectedCity = selectedCity === city;
-    const isWarmerCity = warmerCity === city;
-
-    const onSelectionMadeElement = (
-      <>
-        <p>{isSelectedCity ? 'SELECTED' : 'NOT SELECTED'}</p>
-        <p>{isWarmerCity ? 'WARMER' : 'colder'}</p>
-      </>
-    );
-
-    return (
-      <div className="capital">
-        <p>
-          {Boolean(city.flag) && city.flag} {city.name}, {city.location}
-        </p>
-        <p> {hasTemperature && `${temperature}°F`}</p>
-        {selectedCity !== null && onSelectionMadeElement}
-        <button onClick={() => onSelectCity(city)}>Choose</button>
-      </div>
-    );
-  }
-);
-
-interface GameModeSelectorProps {
-  currentGameMode: GameMode;
-  switchGameMode: () => void;
-}
-
-const GameModeSelector = ({
-  currentGameMode,
-  switchGameMode,
-}: GameModeSelectorProps) => {
-  const nextGameMode = currentGameMode === 'world' ? 'us' : 'world';
-  return (
-    <div>
-      Current Mode: {currentGameMode}
-      <button style={{ marginLeft: '1rem' }} onClick={switchGameMode}>
-        Switch to {nextGameMode}
-      </button>
-    </div>
-  );
-};
 
 export default App;

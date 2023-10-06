@@ -1,4 +1,4 @@
-import { City } from './App';
+import { City } from './types';
 
 // Returns a random integer between 0 and upperRange, inclusive
 const randInt = (upperRange: number) => {
