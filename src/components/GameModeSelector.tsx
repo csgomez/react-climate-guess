@@ -10,7 +10,7 @@ const GameModeSelector = ({
   onGameModeChange,
 }: GameModeSelectorProps) => {
   return (
-    <div className="d-inline-block my-2">
+    <div className="d-inline-block">
       <span className=""></span>
       <div className="btn-group btn-group-sm opacity-75">
         <input
@@ -39,12 +39,6 @@ const GameModeSelector = ({
           USA
         </label>
       </div>
-      {/* <button
-        className="btn btn-sm btn-outline-light ms-3"
-        onClick={onSwitchGameMode}
-      >
-        Switch to {nextGameMode.toUpperCase()} Capitals
-      </button> */}
     </div>
   );
 };

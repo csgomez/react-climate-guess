@@ -5,7 +5,7 @@ interface ScoreProps {
 }
 const ScoreStats = ({ score }: ScoreProps) => {
   return (
-    <div className="d-inline-block text-start">
+    <div className="d-inline-block mx-auto text-start">
       <p>
         Correct: <span className="text-success">{score.correct}</span>
       </p>

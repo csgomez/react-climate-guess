@@ -20,15 +20,16 @@ const CityCard = ({
   const isWarmerCity = warmerCity === city;
   const isWaitingForPlayer = selectedCity === null;
 
+  // values defined in the css file
   const getBorderColor = () => {
     if (isWaitingForPlayer) {
-      return 'border-dark';
+      return 'default';
     }
 
     if (isSelectedCity) {
       return isWarmerCity ? 'correct' : 'incorrect';
     } else {
-      return 'border-dark';
+      return 'default';
     }
   };
 

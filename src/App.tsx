@@ -79,9 +79,9 @@ function App() {
   return (
     <div className="text-center">
       <header className="py-3">
-        <h3 className="mb-0">Weather Game</h3>
+        <h3 className="mb-0">City Climate Game</h3>
       </header>
-      <main className="container px-4">
+      <main className="container d-flex flex-column gap-3 px-4">
         <GameModeSelector
           currentGameMode={currentGameMode}
           onGameModeChange={handleGameModeChange}
@@ -101,7 +101,7 @@ function App() {
         <div className="d-grid col-12 col-md-4 mx-auto">
           {/* Button should appear disabled while waiting for user to choose a city*/}
           <button
-            className={`btn mt-4 my-2 ${
+            className={`btn  ${
               isWaitingForPlayer
                 ? 'btn-outline-light opacity-25'
                 : 'btn-light opacity-75'

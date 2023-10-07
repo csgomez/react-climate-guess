@@ -10,12 +10,16 @@
   margin-bottom: 1rem;
 }
 
+.default {
+  border-color: #c0c5dbe9 !important;
+}
+
 .correct {
   border-color: greenyellow !important;
 }
 
 .incorrect {
-  border-color: rgb(241, 62, 59) !important;
+  border-color: #ff4646 !important;
 }
 
 @media (min-width: 768px) {
