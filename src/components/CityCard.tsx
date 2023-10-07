@@ -35,10 +35,10 @@ const CityCard = ({
 
   return (
     <div
-      className={`cityCard d-flex flex-column justify-content-between align-items-center py-3 bg-secondary bg-gradient border border-2 rounded ${getBorderColor()}`}
+      className={`cityCard shadow d-flex flex-column justify-content-between align-items-center py-3 bg-light-subtle border border-1 rounded ${getBorderColor()}`}
     >
       <p>
-        <span className="flagEmoji">{city.flag}</span>
+        <span className="flagEmoji me-1">{city.flag}</span>
         {city.name}, {city.location}
       </p>
       <p>
@@ -48,7 +48,9 @@ const CityCard = ({
       </p>
       <div className="d-grid col-6 mx-auto">
         <button
-          className="btn btn-dark"
+          className={`shadow-sm btn ${
+            isWaitingForPlayer ? 'btn-dark' : 'btn-outline-dark'
+          }`}
           onClick={() => onSelectCity(city)}
           disabled={selectedCity !== null}
         >
