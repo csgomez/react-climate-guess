@@ -58,13 +58,18 @@ function App() {
     fetchTemps();
   }, [currentCities]);
 
+  // When the WORLD/USA button group is changed
   const handleGameModeChange = (newGameMode: GameMode) => {
     setCurrentGameMode(newGameMode);
   };
 
+  // When the user chooses a city. Increment appropriate score.
   const handleSelectCity = (city: City) => {
     setSelectedCity(city);
-    if (city === warmerCity) {
+
+    const isPlayerCorrect = city === warmerCity;
+
+    if (isPlayerCorrect) {
       setScore((prev) => ({ ...prev, correct: prev.correct + 1 }));
     } else {
       setScore((prev) => ({ ...prev, incorrect: prev.incorrect + 1 }));
