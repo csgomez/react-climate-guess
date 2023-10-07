@@ -99,6 +99,7 @@ function App() {
           ))}
         </div>
         <div className="d-grid col-12 col-md-4 mx-auto">
+          {/* Button should appear disabled while waiting for user to choose a city*/}
           <button
             className={`btn mt-4 my-2 ${
               isWaitingForPlayer
