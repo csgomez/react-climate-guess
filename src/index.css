@@ -1,4 +1,15 @@
 :root {
+  /* color: white; */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -43,4 +54,4 @@ button:focus-visible {
   button:disabled {
     color: rgba(255, 255, 255, 0.3);
   }
-}
+} */

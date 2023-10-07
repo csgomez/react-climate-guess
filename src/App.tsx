@@ -58,8 +58,8 @@ function App() {
     fetchTemps();
   }, [currentCities]);
 
-  const switchGameMode = () => {
-    setCurrentGameMode((prev) => (prev === 'world' ? 'us' : 'world'));
+  const handleGameModeChange = (newGameMode: GameMode) => {
+    setCurrentGameMode(newGameMode);
   };
 
   const handleSelectCity = (city: City) => {
@@ -76,10 +76,10 @@ function App() {
       <header className="py-3">
         <h3 className="mb-0">Weather Game</h3>
       </header>
-      <main className="container">
+      <main className="container px-4">
         <GameModeSelector
           currentGameMode={currentGameMode}
-          onSwitchGameMode={switchGameMode}
+          onGameModeChange={handleGameModeChange}
         />
         <div className="d-flex flex-column flex-md-row justify-content-md-center">
           {currentCities.map((city, index) => (
@@ -93,10 +93,12 @@ function App() {
             />
           ))}
         </div>
-        <div className="d-grid col-8 col-md-4 mx-auto">
+        <div className="d-grid col-12 col-md-4 mx-auto">
           <button
             className={`btn mt-4 my-2 ${
-              isWaitingForPlayer ? 'btn-outline-primary' : 'btn-primary'
+              isWaitingForPlayer
+                ? 'btn-outline-light opacity-25'
+                : 'btn-light opacity-75'
             }`}
             onClick={changeCurrentCities}
             disabled={isWaitingForPlayer}

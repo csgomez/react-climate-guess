@@ -1,5 +1,4 @@
 import { City } from '../types';
-// import styles from './CityCard.module.css';
 import './CityCard.css';
 
 interface CityCardProps {
@@ -17,37 +16,38 @@ const CityCard = ({
   selectedCity,
   warmerCity,
 }: CityCardProps) => {
-  const hasTemperature = temperature !== undefined;
   const isSelectedCity = selectedCity === city;
   const isWarmerCity = warmerCity === city;
   const isWaitingForPlayer = selectedCity === null;
 
   const getBorderColor = () => {
     if (isWaitingForPlayer) {
-      return 'black';
+      return 'border-dark';
     }
 
     if (isSelectedCity) {
-      return isWarmerCity ? 'success' : 'danger';
+      return isWarmerCity ? 'correct' : 'incorrect';
     } else {
-      return 'black';
+      return 'border-dark';
     }
   };
 
   return (
     <div
-      className={`cityCard d-flex flex-column justify-content-between align-items-center py-3 border rounded border-${getBorderColor()}`}
+      className={`cityCard d-flex flex-column justify-content-between align-items-center py-3 bg-secondary bg-gradient border border-2 rounded ${getBorderColor()}`}
     >
       <p>
         <span className="flagEmoji">{city.flag}</span>
         {city.name}, {city.location}
       </p>
-      <p> {isWaitingForPlayer ? '' : `${temperature}°F`}</p>
+      <p>
+        <em>
+          <b>{isWaitingForPlayer ? '' : `${temperature}°F`}</b>
+        </em>
+      </p>
       <div className="d-grid col-6 mx-auto">
         <button
-          className={`btn ${
-            isWaitingForPlayer ? 'btn-primary' : 'btn-outline-primary'
-          }`}
+          className="btn btn-dark"
           onClick={() => onSelectCity(city)}
           disabled={selectedCity !== null}
         >
