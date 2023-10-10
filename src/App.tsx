@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import worldCountryCapitals from './data/world_country_capitals.json';
 import usStateCapitals from './data/us_state_capitals.json';
 import { getTwoRandomCities } from './utils';
@@ -14,8 +14,11 @@ const citiesData = {
   us: usStateCapitals,
 };
 
+const INITIAL_GAME_MODE: GameMode = 'world';
+
 function App() {
-  const [currentGameMode, setCurrentGameMode] = useState<GameMode>('world');
+  const [currentGameMode, setCurrentGameMode] =
+    useState<GameMode>(INITIAL_GAME_MODE);
   const [currentCities, setCurrentCities] = useState<City[]>([]);
   const [temps, setTemps] = useState<number[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
@@ -23,44 +26,41 @@ function App() {
   const warmerCity = getWarmerCity();
   const isWaitingForPlayer = selectedCity === null;
 
+  // Initiate game state on first render
+  useEffect(() => {
+    changeCities(INITIAL_GAME_MODE);
+  }, []);
+
   function getWarmerCity() {
     if (temps.length !== 2) return null;
 
     return temps[0] > temps[1] ? currentCities[0] : currentCities[1];
   }
 
-  // When the user presses the 'New Cities' button
-  const changeCurrentCities = useCallback(() => {
+  const changeCities = async (gameMode: GameMode) => {
     setSelectedCity(null);
 
-    const currentCitiesData = citiesData[currentGameMode];
+    const currentCitiesData = citiesData[gameMode];
     const newCities = getTwoRandomCities(currentCitiesData);
 
     setCurrentCities(newCities);
-  }, [currentGameMode]);
 
-  // After the initial render and whenver the GameMode changes
-  useEffect(() => {
-    changeCurrentCities();
-  }, [currentGameMode, changeCurrentCities]);
+    const newTemps = await Promise.all(
+      newCities.map((city) => fetchTemperatureByCity(city))
+    );
 
-  // Whenever the cities are changed, fetch their live temperatures
-  useEffect(() => {
-    if (currentCities.length === 0) return;
+    setTemps(newTemps);
+  };
 
-    const fetchTemps = async () => {
-      const newTemps = await Promise.all(
-        currentCities.map((city) => fetchTemperatureByCity(city))
-      );
-      setTemps(newTemps);
-    };
-
-    fetchTemps();
-  }, [currentCities]);
+  // When 'Next Cities' button is clicked
+  const handleNextCities = () => {
+    changeCities(currentGameMode);
+  };
 
   // When the WORLD/USA button group is changed
   const handleGameModeChange = (newGameMode: GameMode) => {
     setCurrentGameMode(newGameMode);
+    changeCities(newGameMode);
   };
 
   // When the user chooses a city. Increment appropriate score.
@@ -106,7 +106,7 @@ function App() {
                 ? 'btn-outline-light opacity-25'
                 : 'btn-light opacity-75'
             }`}
-            onClick={changeCurrentCities}
+            onClick={handleNextCities}
             disabled={isWaitingForPlayer}
           >
             Next Cities
