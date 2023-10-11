@@ -37,7 +37,7 @@ const CityCard = ({
     <div
       className={`cityCard shadow d-flex flex-column justify-content-between align-items-center py-3 bg-light-subtle border border-1 rounded ${getBorderColor()}`}
     >
-      <p>
+      <p data-testid="city-details">
         <span className="flagEmoji me-1">{city.flag}</span>
         {city.name}, {city.location}
       </p>

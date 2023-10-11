@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { City } from '../App';
+import { City } from '../types';
 
 // Either a latitude or longittude value
 type Coord = string | number;
