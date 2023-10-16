@@ -7,6 +7,7 @@ import { GameMode, City, Score } from './types';
 import GameModeSelector from './components/GameModeSelector';
 import CityCard from './components/CityCard';
 import ScoreStats from './components/ScoreStats';
+import Header from './components/Header';
 // import './App.css';
 
 const citiesData = {
@@ -20,7 +21,7 @@ function App() {
   const [currentGameMode, setCurrentGameMode] =
     useState<GameMode>(INITIAL_GAME_MODE);
   const [currentCities, setCurrentCities] = useState<City[]>([]);
-  const [temps, setTemps] = useState<number[]>([]);
+  const [cityTemperatures, setCityTemperatures] = useState<number[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
   const [score, setScore] = useState<Score>({ correct: 0, incorrect: 0 });
   const warmerCity = getWarmerCity();
@@ -32,9 +33,11 @@ function App() {
   }, []);
 
   function getWarmerCity() {
-    if (temps.length !== 2) return null;
+    if (cityTemperatures.length !== 2) return null;
 
-    return temps[0] > temps[1] ? currentCities[0] : currentCities[1];
+    return cityTemperatures[0] > cityTemperatures[1]
+      ? currentCities[0]
+      : currentCities[1];
   }
 
   const changeCities = async (gameMode: GameMode) => {
@@ -49,7 +52,7 @@ function App() {
       newCities.map((city) => fetchTemperatureByCity(city))
     );
 
-    setTemps(newTemps);
+    setCityTemperatures(newTemps);
   };
 
   // When 'Next Cities' button is clicked
@@ -78,9 +81,7 @@ function App() {
 
   return (
     <div className="text-center">
-      <header className="py-3">
-        <h3 className="mb-0">City Climate Game</h3>
-      </header>
+      <Header />
       <main className="container d-flex flex-column gap-3 px-4">
         <GameModeSelector
           currentGameMode={currentGameMode}
@@ -91,7 +92,7 @@ function App() {
             <CityCard
               key={index}
               city={city}
-              temperature={temps[index]}
+              temperature={cityTemperatures[index]}
               onSelectCity={handleSelectCity}
               selectedCity={selectedCity}
               warmerCity={warmerCity}
