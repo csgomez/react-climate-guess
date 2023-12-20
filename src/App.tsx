@@ -82,12 +82,13 @@ function App() {
   return (
     <div className="text-center">
       <Header />
-      <main className="container d-flex flex-column gap-3 px-4">
+      {/* <main className="container d-flex flex-column gap-3 px-4"> */}
+      <main className="flex flex-col items-center gap-3 px-4">
         <GameModeSelector
           currentGameMode={currentGameMode}
           onGameModeChange={handleGameModeChange}
         />
-        <div className="d-flex flex-column flex-md-row justify-content-md-center">
+        <div className="flex flex-col md:flex-row gap-5">
           {currentCities.map((city, index) => (
             <CityCard
               key={index}
@@ -114,6 +115,7 @@ function App() {
           </button>
         </div>
         <ScoreStats score={score} />
+        <p className="text-red-400">Test</p>
       </main>
     </div>
   );

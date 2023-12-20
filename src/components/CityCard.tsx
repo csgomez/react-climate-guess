@@ -1,5 +1,5 @@
 import { City } from '../types';
-import './CityCard.css';
+// import './CityCard.css';
 
 interface CityCardProps {
   city: City;
@@ -44,11 +44,14 @@ const CityCard = ({
   );
 
   return (
+    // <div
+    //   className={`cityCard shadow d-flex flex-column justify-content-between align-items-center py-3 bg-light-subtle border border-1 rounded ${borderColor}`}
+    // >
     <div
-      className={`cityCard shadow d-flex flex-column justify-content-between align-items-center py-3 bg-light-subtle border border-1 rounded ${borderColor}`}
+      className={`h-48 md:w-[370px] shadow-xl flex flex-col justify-between items-center py-5 bg-gray-700 border rounded-md ${borderColor}`}
     >
       <p data-testid="city-details">
-        <span className="flagEmoji me-1">{city.flag}</span>
+        <span className="font-emoji me-2">{city.flag}</span>
         {city.name}, {city.location}
       </p>
       <p>
@@ -57,10 +60,12 @@ const CityCard = ({
         </em>
       </p>
       <div className="d-grid col-6 mx-auto">
-        <button
+        {/* <button
           className={`shadow-sm btn ${
             isWaitingForPlayer ? 'btn-dark' : 'btn-outline-dark'
-          }`}
+          }`} */}
+        <button
+          className="py-1 px-10 rounded-md enabled:shadow-lg enabled:bg-gray-800 disabled:outline disabled:outline-1 disabled:opacity-50 hover:enabled:bg-slate-200 hover:enabled:text-black transition duration-100 ease-in-out"
           onClick={() => onSelectCity(city)}
           disabled={selectedCity !== null}
         >
