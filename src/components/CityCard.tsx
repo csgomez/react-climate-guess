@@ -9,6 +9,22 @@ interface CityCardProps {
   warmerCity: City | null;
 }
 
+const getBorderColor = (
+  isWaitingForPlayer: boolean,
+  isSelectedCity: boolean,
+  isWarmerCity: boolean
+) => {
+  if (isWaitingForPlayer) {
+    return 'default';
+  }
+
+  if (isSelectedCity) {
+    return isWarmerCity ? 'correct' : 'incorrect';
+  } else {
+    return 'default';
+  }
+};
+
 const CityCard = ({
   city,
   temperature,
@@ -21,21 +37,15 @@ const CityCard = ({
   const isWaitingForPlayer = selectedCity === null;
 
   // values defined in the css file
-  const getBorderColor = () => {
-    if (isWaitingForPlayer) {
-      return 'default';
-    }
-
-    if (isSelectedCity) {
-      return isWarmerCity ? 'correct' : 'incorrect';
-    } else {
-      return 'default';
-    }
-  };
+  const borderColor = getBorderColor(
+    isWaitingForPlayer,
+    isSelectedCity,
+    isWarmerCity
+  );
 
   return (
     <div
-      className={`cityCard shadow d-flex flex-column justify-content-between align-items-center py-3 bg-light-subtle border border-1 rounded ${getBorderColor()}`}
+      className={`cityCard shadow d-flex flex-column justify-content-between align-items-center py-3 bg-light-subtle border border-1 rounded ${borderColor}`}
     >
       <p data-testid="city-details">
         <span className="flagEmoji me-1">{city.flag}</span>
