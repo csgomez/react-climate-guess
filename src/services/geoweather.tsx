@@ -4,6 +4,23 @@ import { City } from '../types';
 // Either a latitude or longittude value
 type Coord = string | number;
 
+interface WeatherResponse {
+  current_weather: {
+    interval: number;
+    is_day: number;
+    temperature: number;
+    time: string; // iso8601
+    weathercode: number;
+    winddirection: number;
+    windspeed: number; // kph
+  };
+  latitude: number;
+  longitude: number;
+  timezone: string;
+  timezone_abbreviation: string;
+  utc_offset_seconds: number;
+}
+
 const getLocationUrl = (locationName: string) =>
   `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
     locationName
@@ -23,32 +40,9 @@ export const fetchCoordinatesByLocationName = async (locationName: string) => {
   return { lat, lon, country };
 };
 
-export const fetchWeather = async (latitude: Coord, longitude: Coord) => {
-  const url = getWeatherUrl(latitude, longitude);
-  const response = await axios.get(url);
-  console.log(response);
-
-  const { temperature, time } = response.data.current_weather;
-
-  return { temperature, time };
-};
-
-export const fetchTemperatureByCoordinates = async (
-  latitude: Coord,
-  longitude: Coord
-) => {
-  const url = getWeatherUrl(latitude, longitude);
-  const response = await axios.get(url);
-  console.log(response);
-
-  const { temperature } = response.data.current_weather;
-
-  return temperature;
-};
-
 export const fetchTemperatureByCity = async (city: City) => {
   const url = getWeatherUrl(city.coords.lat, city.coords.long);
-  const response = await axios.get(url);
+  const response = await axios.get<WeatherResponse>(url);
   console.log(response.data);
 
   const { temperature } = response.data.current_weather;
