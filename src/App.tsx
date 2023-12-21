@@ -31,7 +31,8 @@ function App() {
 
   // Initiate game state on first render
   useEffect(() => {
-    changeCities(INITIAL_GAME_MODE);
+    changeCities(currentGameMode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function getWarmerCity() {
