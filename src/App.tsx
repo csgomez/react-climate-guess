@@ -8,7 +8,7 @@ import GameModeSelector from './components/GameModeSelector';
 import CityCard from './components/CityCard';
 import ScoreStats from './components/ScoreStats';
 import Header from './components/Header';
-// import './App.css';
+import useLocalStorage from './hooks/useLocalStorage';
 
 const citiesData = {
   world: worldCountryCapitals,
@@ -18,8 +18,10 @@ const citiesData = {
 const INITIAL_GAME_MODE: GameMode = 'world';
 
 function App() {
-  const [currentGameMode, setCurrentGameMode] =
-    useState<GameMode>(INITIAL_GAME_MODE);
+  const [currentGameMode, setCurrentGameMode] = useLocalStorage(
+    'gameMode',
+    INITIAL_GAME_MODE
+  );
   const [currentCities, setCurrentCities] = useState<City[]>([]);
   const [cityTemperatures, setCityTemperatures] = useState<number[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
