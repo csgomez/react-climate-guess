@@ -1,29 +1,20 @@
+import { useState } from 'react';
 import { City, Score } from '../types';
 import CityCard from './CityCard';
+import NextCitiesButton from './NextCitiesButton';
+import { getWarmerCity } from '../utils';
 
 interface GameProps {
   cities: City[];
   cityTemperatures: number[];
-  onChangeCities: () => void;
+  changeCities: () => Promise<void>;
   setScore: React.Dispatch<React.SetStateAction<Score>>;
-  selectedCity: City | null;
-  setSelectedCity: React.Dispatch<React.SetStateAction<City | null>>;
 }
 
-function Game({
-  cities,
-  cityTemperatures,
-  setScore,
-  selectedCity,
-  setSelectedCity,
-}: GameProps) {
-  const warmerCity = getWarmerCity();
-
-  function getWarmerCity() {
-    if (cityTemperatures.length !== 2) return null;
-
-    return cityTemperatures[0] > cityTemperatures[1] ? cities[0] : cities[1];
-  }
+function Game({ cities, cityTemperatures, changeCities, setScore }: GameProps) {
+  const [selectedCity, setSelectedCity] = useState<City | null>(null);
+  const isWaitingForPlayer = selectedCity === null;
+  const warmerCity = getWarmerCity(cities, cityTemperatures);
 
   // When the user chooses a city. Increment appropriate score.
   const handleSelectCity = (city: City) => {
@@ -38,19 +29,31 @@ function Game({
     }
   };
 
+  const handleNextButtonClick = async () => {
+    setSelectedCity(null);
+    await changeCities();
+  };
+
   return (
-    <div className="d-flex flex-column flex-md-row justify-content-md-center">
-      {cities.map((city, index) => (
-        <CityCard
-          key={index}
-          city={city}
-          temperature={cityTemperatures[index]}
-          onSelectCity={handleSelectCity}
-          selectedCity={selectedCity}
-          warmerCity={warmerCity}
-        />
-      ))}
-    </div>
+    <>
+      <div className="d-flex flex-column flex-md-row justify-content-md-center">
+        {cities.map((city, index) => (
+          <CityCard
+            key={index}
+            city={city}
+            cityIndex={index}
+            temperature={cityTemperatures[index]}
+            onSelectCity={handleSelectCity}
+            selectedCity={selectedCity}
+            warmerCity={warmerCity}
+          />
+        ))}
+      </div>
+      <NextCitiesButton
+        isWaitingForPlayer={isWaitingForPlayer}
+        onClick={handleNextButtonClick}
+      />
+    </>
   );
 }
 

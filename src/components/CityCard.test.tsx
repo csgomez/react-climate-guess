@@ -2,26 +2,33 @@ import { render, screen } from '@testing-library/react';
 import CityCard from './CityCard';
 
 describe('CityCard', () => {
-  const mockCityProps = {
-    city: {
-      flag: '🇵🇪',
-      coords: {
-        lat: -12.05,
-        long: -77.05,
-      },
-      location: 'Peru',
-      name: 'Lima',
+  const mockCity = {
+    flag: '🇵🇪',
+    coords: {
+      lat: -12.05,
+      long: -77.05,
     },
-    temperature: 65.7,
-    onSelectCity: () => {
-      return;
-    },
-    selectedCity: null,
-    warmerCity: null,
+    location: 'Peru',
+    name: 'Lima',
   };
 
+  const mockCityIndex = 0;
+  const mockTemperature = 65.7;
+  const mockOnSelectCity = vi.fn();
+  const mockSelectedCity = null;
+  const mockWarmerCity = null;
+
   it('renders its props correctly', () => {
-    render(<CityCard {...mockCityProps} />);
+    render(
+      <CityCard
+        city={mockCity}
+        cityIndex={mockCityIndex}
+        temperature={mockTemperature}
+        onSelectCity={mockOnSelectCity}
+        selectedCity={mockSelectedCity}
+        warmerCity={mockWarmerCity}
+      />
+    );
 
     expect(screen.getByText(/Lima/)).toBeInTheDocument();
     expect(screen.getByText(/Peru/)).toBeInTheDocument();

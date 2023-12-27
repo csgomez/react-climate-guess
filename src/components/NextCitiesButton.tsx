@@ -18,6 +18,7 @@ const NextCitiesButton = ({
         className={`btn ${buttonStyle}`}
         onClick={handleClick}
         disabled={isWaitingForPlayer}
+        data-testid="next-button"
       >
         Next Cities
       </button>

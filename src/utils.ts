@@ -20,3 +20,9 @@ export const getTwoRandomCities = (citiesData: City[]) => {
 
   return [city1, city2];
 };
+
+export const getWarmerCity = (cities: City[], temps: number[]) => {
+  if (temps.length !== 2) return null;
+
+  return temps[0] > temps[1] ? cities[0] : cities[1];
+};
