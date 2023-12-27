@@ -3,6 +3,7 @@ import './CityCard.css';
 
 interface CityCardProps {
   city: City;
+  cityIndex: number;
   temperature: number;
   onSelectCity: (city: City) => void;
   selectedCity: City | null;
@@ -27,6 +28,7 @@ const getBorderColor = (
 
 const CityCard = ({
   city,
+  cityIndex,
   temperature,
   onSelectCity,
   selectedCity,
@@ -43,9 +45,13 @@ const CityCard = ({
     isWarmerCity
   );
 
+  // Will result in "city-1" and "city-2" instead of 'city-0' and 'city-1'
+  const testIdPrefix = `city-${cityIndex + 1}`;
+
   return (
     <div
       className={`cityCard shadow d-flex flex-column justify-content-between align-items-center py-3 bg-light-subtle border border-1 rounded ${borderColor}`}
+      data-testid={testIdPrefix}
     >
       <p data-testid="city-details">
         <span className="flagEmoji me-1">{city.flag}</span>
@@ -63,6 +69,7 @@ const CityCard = ({
           }`}
           onClick={() => onSelectCity(city)}
           disabled={selectedCity !== null}
+          data-testid={`${testIdPrefix}-button`}
         >
           Choose
         </button>
