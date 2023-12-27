@@ -10,7 +10,7 @@ const NextCitiesButton = ({
   // Button should appear disabled while waiting for user to choose a city
   const buttonStyle = isWaitingForPlayer
     ? 'btn-outline-light opacity-25'
-    : 'btn-light opacity-75';
+    : 'btn-light';
 
   return (
     <div className="d-grid col-12 col-md-4 mx-auto">
