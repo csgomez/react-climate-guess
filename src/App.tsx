@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     changeCities();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [currentGameMode]);
 
   const changeCities = async () => {
     const currentCitiesData = citiesData[currentGameMode];
