@@ -1,6 +1,7 @@
 import { fireEvent, render } from '@testing-library/react';
 import Game from './Game';
 import { City } from '../types';
+import { useState } from 'react';
 
 const LIMA_PERU: City = {
   flag: '🇵🇪',
@@ -29,14 +30,21 @@ describe('Game', () => {
     const mockChangeCities = vi.fn();
     const mockSetScore = vi.fn();
 
-    render(
-      <Game
-        cities={mockCities}
-        cityTemperatures={mockTemperatures}
-        changeCities={mockChangeCities}
-        setScore={mockSetScore}
-      />
-    );
+    const GameWrapper = () => {
+      const [selectedCity, setSelectedCity] = useState<City | null>(null);
+      return (
+        <Game
+          cities={mockCities}
+          cityTemperatures={mockTemperatures}
+          selectedCity={selectedCity}
+          setSelectedCity={setSelectedCity}
+          changeCities={mockChangeCities}
+          setScore={mockSetScore}
+        />
+      );
+    };
+
+    render(<GameWrapper />);
   });
 
   it("correctly adds the 'correct' and 'incorrect' classes", async () => {
@@ -45,14 +53,21 @@ describe('Game', () => {
     const mockChangeCities = vi.fn();
     const mockSetScore = vi.fn();
 
-    const component = render(
-      <Game
-        cities={mockCities}
-        cityTemperatures={mockTemperatures}
-        changeCities={mockChangeCities}
-        setScore={mockSetScore}
-      />
-    );
+    const GameWrapper = () => {
+      const [selectedCity, setSelectedCity] = useState<City | null>(null);
+      return (
+        <Game
+          cities={mockCities}
+          cityTemperatures={mockTemperatures}
+          selectedCity={selectedCity}
+          setSelectedCity={setSelectedCity}
+          changeCities={mockChangeCities}
+          setScore={mockSetScore}
+        />
+      );
+    };
+
+    const component = render(<GameWrapper />);
 
     const firstCity = await component.findByTestId('city-1');
     const firstCityButton = await component.findByTestId('city-1-button');

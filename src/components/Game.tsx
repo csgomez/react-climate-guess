@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { City, Score } from '../types';
 import CityCard from './CityCard';
 import NextCitiesButton from './NextCitiesButton';
@@ -7,12 +6,20 @@ import { getWarmerCity } from '../utils';
 interface GameProps {
   cities: City[];
   cityTemperatures: number[];
+  selectedCity: City | null;
+  setSelectedCity: (city: City | null) => void;
   changeCities: () => Promise<void>;
   setScore: React.Dispatch<React.SetStateAction<Score>>;
 }
 
-function Game({ cities, cityTemperatures, changeCities, setScore }: GameProps) {
-  const [selectedCity, setSelectedCity] = useState<City | null>(null);
+function Game({
+  cities,
+  cityTemperatures,
+  selectedCity,
+  setSelectedCity,
+  changeCities,
+  setScore,
+}: GameProps) {
   const isWaitingForPlayer = selectedCity === null;
   const warmerCity = getWarmerCity(cities, cityTemperatures);
 
