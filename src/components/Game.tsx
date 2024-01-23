@@ -1,7 +1,7 @@
 import { City, Score } from '../types';
 import CityCard from './CityCard';
 import NextCitiesButton from './NextCitiesButton';
-import { getWarmerCity } from '../utils';
+import { getWarmerCity } from '../lib/utils';
 
 interface GameProps {
   cities: City[];

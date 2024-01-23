@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import worldCountryCapitals from './data/world_country_capitals.json';
 import usStateCapitals from './data/us_state_capitals.json';
-import { getTwoRandomCities } from './utils';
+import { getTwoRandomCities } from './lib/utils';
 import { fetchTemperatureByCity } from './services/geoweather';
 import { GameMode, City, Score } from './types';
 import useLocalStorage from './hooks/useLocalStorage';
