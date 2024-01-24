@@ -9,6 +9,7 @@ import Game from './components/Game';
 import GameModeSelector from './components/GameModeSelector';
 import ScoreStats from './components/ScoreStats';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const citiesData = {
   world: worldCountryCapitals,
@@ -56,9 +57,9 @@ function App() {
   };
 
   return (
-    <div className="text-center">
+    <div className="vh-100 text-center d-flex flex-column">
       <Header />
-      <main className="container d-flex flex-column gap-3 px-4">
+      <main className="container d-flex flex-column flex-grow-1 gap-3 px-4">
         <GameModeSelector
           currentGameMode={currentGameMode}
           onGameModeChange={changeGameMode}
@@ -72,6 +73,7 @@ function App() {
           setScore={setScore}
         />
         <ScoreStats score={score} />
+        <Footer />
       </main>
     </div>
   );
