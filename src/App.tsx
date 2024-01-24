@@ -10,6 +10,7 @@ import GameModeSelector from './components/GameModeSelector';
 import ScoreStats from './components/ScoreStats';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import GamePrompt from './components/GamePrompt';
 
 const citiesData = {
   world: worldCountryCapitals,
@@ -64,6 +65,7 @@ function App() {
           currentGameMode={currentGameMode}
           onGameModeChange={changeGameMode}
         />
+        <GamePrompt />
         <Game
           cities={currentCities}
           cityTemperatures={cityTemperatures}
