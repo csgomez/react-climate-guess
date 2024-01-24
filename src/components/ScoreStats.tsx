@@ -5,12 +5,13 @@ interface ScoreProps {
 }
 const ScoreStats = ({ score }: ScoreProps) => {
   return (
-    <div className="d-inline-block mx-auto text-start">
+    <div className="d-flex flex-row justify-content-center gap-3">
       <p>
-        Correct: <span className="text-success">{score.correct}</span>
+        Correct: <span className="text-success fw-bold">{score.correct}</span>
       </p>
       <p>
-        Incorrect: <span className="text-danger">{score.incorrect}</span>
+        Incorrect:{' '}
+        <span className="text-danger fw-bold">{score.incorrect}</span>
       </p>
     </div>
   );
