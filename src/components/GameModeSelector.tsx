@@ -11,7 +11,6 @@ const GameModeSelector = ({
 }: GameModeSelectorProps) => {
   return (
     <div className="d-inline-block">
-      <span className=""></span>
       <div className="btn-group btn-group-sm opacity-75">
         <input
           type="radio"
