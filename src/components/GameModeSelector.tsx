@@ -2,12 +2,12 @@ import { GameMode } from '../types';
 
 interface GameModeSelectorProps {
   currentGameMode: GameMode;
-  onGameModeChange: (newGameMode: GameMode) => void;
+  setCurrentGameMode: (newGameMode: GameMode) => void;
 }
 
 const GameModeSelector = ({
   currentGameMode,
-  onGameModeChange,
+  setCurrentGameMode,
 }: GameModeSelectorProps) => {
   return (
     <div className="d-inline-block">
@@ -19,7 +19,7 @@ const GameModeSelector = ({
           className="btn-check"
           autoComplete="off"
           checked={currentGameMode === 'world'}
-          onChange={() => onGameModeChange('world')}
+          onChange={() => setCurrentGameMode('world')}
         />
         <label htmlFor="worldbtn" className="btn btn-outline-light">
           WORLD
@@ -32,7 +32,7 @@ const GameModeSelector = ({
           className="btn-check"
           autoComplete="off"
           checked={currentGameMode === 'us'}
-          onChange={() => onGameModeChange('us')}
+          onChange={() => setCurrentGameMode('us')}
         />
         <label htmlFor="usbtn" className="btn btn-outline-light">
           USA

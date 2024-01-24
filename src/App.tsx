@@ -29,11 +29,14 @@ function App() {
   const [cityTemperatures, setCityTemperatures] = useState<number[]>([]);
   const [score, setScore] = useState<Score>({ correct: 0, incorrect: 0 });
 
-  // Initiate game state on first render
+  // Sets initial cities and then gets new ones when next button or game mode are clicked
   useEffect(() => {
+    // Only update the cities if the user hasn't chosen a city yet
+    if (selectedCity !== null) return;
+
     changeCities();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [currentGameMode]);
 
   const changeCities = async () => {
     const currentCitiesData = citiesData[currentGameMode];
@@ -48,15 +51,6 @@ function App() {
     setCityTemperatures(newTemps);
   };
 
-  const changeGameMode = async (newGameMode: GameMode) => {
-    setCurrentGameMode(newGameMode);
-
-    // Only update the cities if the user hasn't chosen a city yet
-    if (!selectedCity) {
-      await changeCities();
-    }
-  };
-
   return (
     <div className="vh-100 text-center d-flex flex-column">
       <Header />
@@ -64,7 +58,7 @@ function App() {
         <section className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 gap-sm-4 mb-2">
           <GameModeSelector
             currentGameMode={currentGameMode}
-            onGameModeChange={changeGameMode}
+            setCurrentGameMode={setCurrentGameMode}
           />
           <ScoreStats score={score} />
         </section>
