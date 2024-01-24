@@ -10,7 +10,7 @@ import GameModeSelector from './components/GameModeSelector';
 import ScoreStats from './components/ScoreStats';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import GamePrompt from './components/GamePrompt';
+// import GamePrompt from './components/GamePrompt';
 
 const citiesData = {
   world: worldCountryCapitals,
@@ -61,11 +61,14 @@ function App() {
     <div className="vh-100 text-center d-flex flex-column">
       <Header />
       <main className="container d-flex flex-column flex-grow-1 gap-3 px-4">
-        <GameModeSelector
-          currentGameMode={currentGameMode}
-          onGameModeChange={changeGameMode}
-        />
-        <GamePrompt />
+        <section className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 gap-sm-4 mb-2">
+          <GameModeSelector
+            currentGameMode={currentGameMode}
+            onGameModeChange={changeGameMode}
+          />
+          <ScoreStats score={score} />
+        </section>
+        {/* <GamePrompt /> */}
         <Game
           cities={currentCities}
           cityTemperatures={cityTemperatures}
@@ -74,7 +77,6 @@ function App() {
           changeCities={changeCities}
           setScore={setScore}
         />
-        <ScoreStats score={score} />
         <Footer />
       </main>
     </div>
