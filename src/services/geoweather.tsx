@@ -43,7 +43,10 @@ export const fetchCoordinatesByLocationName = async (locationName: string) => {
 export const fetchTemperatureByCity = async (city: City) => {
   const url = getWeatherUrl(city.coords.lat, city.coords.long);
   const response = await axios.get<WeatherResponse>(url);
-  console.log(response.data);
+
+  if (import.meta.env.MODE === 'development') {
+    console.log(response.data);
+  }
 
   const { temperature } = response.data.current_weather;
 
