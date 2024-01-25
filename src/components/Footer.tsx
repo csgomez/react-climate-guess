@@ -10,8 +10,10 @@ const Footer = () => {
         </a>
       </p>
       <p>—</p>
-      {/* TODO: Add Github Link */}
-      <a href="#" title="Project Github Link">
+      <a
+        href="https://github.com/csgomez/react-climate-guess.git"
+        title="Project Github Link"
+      >
         <GithubIcon size={18} />
       </a>
     </footer>
