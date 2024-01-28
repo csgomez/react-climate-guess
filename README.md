@@ -7,6 +7,8 @@ A fun and interesting game that uses real time weather data. You're given two ra
 - **World**: Capitals from countries from across the world
 - **US**: Capitals from States in the US
 
+Try it out! https://csgomez.github.io/react-climate-guess/
+
 ## Setup
 
 Clone the repository.
